@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'din_next_w1gheavy_italic';
+    src: url('dinnextw1g-heavyitalic-webfont.woff2') format('woff2'),
+         url('dinnextw1g-heavyitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'din_next_w1gmedium_italic';
+    src: url('dinnextw1g-mediumitalic-webfont.woff2') format('woff2'),
+         url('dinnextw1g-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    cursor: url(../images/1.png), auto;
+    cursor: url(../images/2.png), auto;
+
+}
+
+body{
+    font-family: regular;
+    margin: 0;
+    padding: 0;
+    background: #f3f5f6;
+}
+
+button a{
+    cursor: url(../images/2.png), pointer;
+
+}
+
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #1e2d7d;
+    padding: 0px 10px 0px 10px;
+    justify-content: space-between;
+    border-bottom: 0.5px solid hsla(0, 0%, 100%, 0.3);
+}
+
+
+.subscribe-save{
+    padding: 15px;
+    margin-right: 2rem;
+    border-radius: 0px;
+    font-size: 15px;
+    font-family: regular;
+    color: white;
+    background-color: #31c6e1;
+    border: 0;
+    cursor: pointer;
+}
+
+.shipping-info{
+    padding: 12px;
+    margin-left: 2rem;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #1e2d7d;
+    height: 4.5rem;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+a{
+    text-decoration-line: none;
+    color: white;
+}
+
+li a{
+    padding: 0 20px;
+}
+
+.header-logo{
+    width: 175px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-left: 3.2rem;
+    margin-right: 2rems;
+}
+
+input::placeholder{
+    font-family: regular;
+}
+
+input{
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    width: 22%;
+    font-size: 15px;
+}
+
+button{
+    border: none;
+    font-family: regular;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #31c6e1;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+p{
+    font-family: regular;
+    margin: 0px;
+}
+
+.icons-user{
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-right: 2.6rem;
+
+}
+.icons-cart{
+    font-size: 1.3rem;
+    cursor: pointer;
+
+
+}
+
+.container{
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.hero-content{
+    color: white;
+    height: 500px;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-items: center;
+}
+
+.hero-title{
+    margin-top: -8px;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.hero-subtitle{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.hero-btn{
+    width: 10rem;
+    padding: 15px;
+    transition: background-color 0.3s
+
+}
+
+.hero-btn:hover{
+    background-color: #1e2d7d;
+}
+
+.fa-brands{
+    color: black;
+    font-size: 25px;
+}
+
+.header-tiles{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem;
+}
+
+.header-tile{
+    padding: 25px;
+    width: 400px;
+    height: 230px;
+    border-radius: 5px;
+    color: white;
+}
+
+.header-tile h2{
+    margin-bottom: 15px;
+}
+
+.header-tile p{
+    margin-bottom: 15px;
+}
+
+.header-tile button{
+    background-color: white;
+    width: 10rem;
+    padding: 15px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.banner-tiles{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.banner-tile{
+    width: 630px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #e3e5e6;
+}
+
+.banner-tile h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.banner-tiles img{
+    width: 80px;
+    float: left;
+    margin-right: 30px;
+}
+
+.media-with-text{
+    margin: 40px;
+    background-color: white;
+    border-radius: 4px;
+    color: white;
+    background-image: url(../images/earbuds.webp);
+    background-repeat: no-repeat;
+}
+
+.media-with-text h2{
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 60px;
+}
+
+.media-with-text .text{
+    padding: 80px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
