@@ -1,0 +1,396 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #f3f5f6;
+}
+.small-container {
+  max-width: 100%;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-product {
+  margin-top: 80px;
+}
+.small_img_row {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 5%;
+}
+
+.col-2 img {
+  max-width: 100%;
+}
+.small-img-col {
+  flex-basis: 23%;
+  cursor: pointer;
+  border: 2px solid rgb(131, 131, 212);
+}
+.left-side {
+  flex-basis: 48%;
+  background-color: #ffffff;
+}
+.right-side {
+  flex-basis: 50%;
+  background-color: #ffffff;
+}
+.product-details {
+  margin-top: 20px;
+}
+.right-side h1 {
+  font-size: 30px;
+  line-height: 60px;
+  margin: 10px 0 0 25px;
+  color: #093b9e;
+}
+.product-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400px;
+  font-size: 15px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #256eff;
+  padding: 0 0 3px;
+  transition: all 0.5s ease;
+}
+.product-link:hover {
+  opacity: 0.9;
+}
+.product-rating {
+  color: #ffee07;
+}
+.product-rating span {
+  font-weight: 600;
+  color: #256eff;
+}
+.product-price {
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: navy;
+}
+.last-price,
+.new-price {
+  padding: 5px;
+}
+.product-price span {
+  font-weight: 400;
+}
+.last-price span {
+  color: #f64749;
+  text-decoration: line-through;
+}
+.new-price span {
+  color: #256eff;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #256eff;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.social-links a:hover {
+  background: #a8a6a6;
+  border-color: transparent;
+  color: #fff;
+}
+.rating-socil-Icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3%;
+  padding-right: 25px;
+}
+.product-details .product-title,
+.rating-socil-Icon,
+.price-divider,
+.product-price,
+.product-link {
+  margin-left: 25px;
+}
+.price-divider {
+  margin-right: 25px;
+}
+/* Container for the stock indicator */
+.stock-container {
+  margin: 20px;
+  padding-left: 6px;
+}
+
+/* Stock label */
+.stock-label {
+  font-weight: bold;
+  color: navy;
+  padding-right: 7px;
+}
+
+/* Stock status */
+.stock-status {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.stock-text {
+  color: green;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+/* Progress bar container */
+.progress-bar-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 5px;
+}
+
+/* Progress bar */
+.progress-bar {
+  height: 100%;
+  background-color: green;
+  border-radius: 5px;
+}
+
+/* add to cart - buy -quantity */
+
+/* ===Qunatity=== */
+.quntity-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.purchase-info label {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: navy;
+  padding-left: 25px;
+}
+.counter-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8ff;
+  border-radius: 10px;
+  padding: 0 5px;
+  gap: 10px;
+  height: 2.4rem;
+}
+.counter-btn {
+  color: #2e538b;
+  background-color: #f8f8ff;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 2px 0px;
+  border: none;
+  font-weight: 700;
+}
+.counter-btn:hover,
+.counter-btn:focus {
+  color: #3f05aa;
+}
+
+.counter-wrapper .span {
+  color: #04030a;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+/* ----AAd to cart & buy it */
+
+.purchase-info .btn {
+  border: 1.5px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  padding: 7.2px 12.8px;
+  outline: 0;
+  margin-right: 3.2px;
+  margin-bottom: 16px;
+  flex: 1;
+  height: 50px;
+}
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 20px;
+}
+.purchase-info .btn {
+  cursor: pointer;
+  color: #fff;
+}
+.purchase-info .btn:first-of-type {
+  background: #00badb;
+}
+.purchase-info .btn:last-of-type {
+  background: #1e2d7d;
+}
+.purchase-info .btn:hover {
+  opacity: 0.9;
+}
+
+/* Product Info Section */
+.product-info {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #eff7fe;
+  flex-basis: 100%;
+}
+
+.info-section {
+  margin-bottom: 5%;
+  background-color: white;
+  flex-basis: 100%;
+  text-align: left;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.info-section h3 {
+  font-size: 20px;
+  color: #1e2d7d;
+  padding: 25px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.info-section p {
+  font-size: 15px;
+  color: #788288;
+  line-height: 1.5;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+}
+/* description */
+
+#check {
+  display: none;
+}
+
+.hidden-content {
+  display: none;
+}
+/* view more funtion */
+#check:checked ~ .hidden-content {
+  display: block;
+}
+#check:checked ~ label {
+  visibility: hidden;
+}
+#check:checked ~ label:after {
+  content: "- view less";
+  display: block;
+  visibility: visible;
+}
+
+.description label {
+  color: #00bae2;
+  font-size: 17px;
+  padding-left: 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* shipping & returns */
+.shipping ul {
+  margin: 0;
+  padding-left: 45px;
+  list-style-position: outside;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+.shipping li {
+  font-size: 15px;
+  color: #788288;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.shipping li::marker {
+  font-size: 16px; /* Adjust the size of the bullet */
+  color: #788288;
+}
+
+/* payment  */
+.payment h3 {
+  display: flex;
+  justify-content: space-between;
+}
+.payment h4 {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #39478d;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+/* payment method icon desing */
+
+.payment-methods {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.payment-methods img {
+  width: 30px;
+  height: auto;
+}
+/* security part */
+.secu-divider {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.security-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+}
+
+.security-flex div {
+  display: flex;
+  flex-direction: column;
+}
+
+.security-flex i {
+  color: #4481dd;
+  font-size: 60px;
+}
+.security-flex p {
+  color: #202f7d;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.security-flex span {
+  color: #64cddf;
+}
