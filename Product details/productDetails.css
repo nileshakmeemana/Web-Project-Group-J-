@@ -211,6 +211,12 @@ body {
   gap: 10px;
   height: 2.4rem;
 }
+
+.btn{
+  font-family: regular;
+  font-size: medium;
+}
+
 .counter-btn {
   color: #2e538b;
   background-color: #f8f8ff;
