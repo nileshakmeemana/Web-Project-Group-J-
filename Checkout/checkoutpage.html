@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>checkoutpage</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/6f47df0af3.js"
@@ -52,7 +52,6 @@
            <hr>
            <span>OR</span>
        </div>
-      <div class="left">
        <div class="Containerpage">
         <div class="main">
          <form action="">
@@ -61,32 +60,29 @@
               <div class="textbox">
                 <h2>Contact</h2>
                 <input class="tel" type="text" placeholder="Email">
-               
-              </div>
-            </div>
-            <p>Email me with new offers<input type="checkbox" name="checkbox"></p> 
-              
-              <div>
-                <br>
-              <h2>Delivery</h2>
-                <select id="country" name="country">
-                  <option value="Sri lanka">Sri lanka</option>
-                  <option value="India">India</option> 
-                  <option value="China">China</option>
-                  <option value="United states">United states</option>
-                  <option value="Australia">Australia</option>
-                </select>
                 
-              </div>
-              
-              <br>
-              <div>
-                <input class="tel" type="text" name="fname" placeholder="First name">
+                <div>
+                  <br>
+                <p>Email me with new offers<input type="checkbox" name="checkbox"></p>
                 <br>
-                <br>
-                <input class="tel" type="text" name="Lname" placeholder="Last name">
-              </div>
+                <h2>Delivery</h2>
+                  <select id="country" name="country">
+                    <option value="Sri lanka">Sri lanka</option>
+                    <option value="India">India</option> 
+                    <option value="China">China</option>
+                    <option value="United states">United states</option>
+                    <option value="Australia">Australia</option>
+                  </select>
+                  <br>
+                  <br>
+             <div>
+                 <input class="tel" type="text" name="fname" placeholder="First name">
               <br>
+              <br>
+              <input class="tel" type="text" name="Lname" placeholder="Last name">
+
+           </div>
+                       <br>
               <div>
                 <input class="tel" type="text" name="Company" placeholder="Company">
               </div>
@@ -109,112 +105,153 @@
               <div>
                 <input class="tel" type="tel" name="Phone" placeholder="Phone" size="20px">
               </div>
+
               <br>
-        </div> 
-        <h2>Shipping method</h2>
-        <div class="shipping-methods">
-          <form>
-            <label class="shipping-option">
-              <input type="radio" name="shipping" value="usps-first-class" checked>
-              <div class="details">
-                <div class="title">USPS First Class Mail International</div>
-                <div class="time">5-15 Days</div>
-              </div>
-              <div class="price">$17.79</div>
+              <h2>Shipping method</h2>
+              <br>
+              <form>
+                <div class="shipping-methods">
+                <label class="shipping-option">
+                  <input type="radio" name="shipping" value="usps-first-class" checked>
+                  <div class="details">
+                    <div class="title">USPS First Class Mail International</div>
+                    <div class="time">5-15 Days</div>
+                  </div>
+                  <div class="price">Rs.2900</div>
+                </label>
+                <br>
+                <label class="shipping-option">
+                  <input type="radio" name="shipping" value="dhl-parcel">
+                  <div class="details">
+                      <div class="title">DHL Parcel International Standard</div>
+                      <div class="time">8-14 Days</div>
+                  </div>
+                  <div class="price">Rs.2750</div>
+              </label>
+              <br>
+              <label class="shipping-option">
+                <input type="radio" name="shipping" value="asendia-select">
+                <div class="details">
+                    <div class="title">Asendia e-PAQ Select</div>
+                    <div class="time">6-9 Days</div>
+                </div>
+                <div class="price">Rs.2700</div>
             </label>
+            <br>
             <label class="shipping-option">
-              <input type="radio" name="shipping" value="dhl-parcel">
-              <div class="details">
-                  <div class="title">DHL Parcel International Standard</div>
-                  <div class="time">8-14 Days</div>
-              </div>
-              <div class="price">$26.15</div>
-          </label>
-
-          <label class="shipping-option">
-              <input type="radio" name="shipping" value="asendia-select">
-              <div class="details">
-                  <div class="title">Asendia e-PAQ Select</div>
-                  <div class="time">6-9 Days</div>
-              </div>
-              <div class="price">$31.59</div>
-          </label>
-
-          <label class="shipping-option">
               <input type="radio" name="shipping" value="asendia-express">
               <div class="details">
                   <div class="title">Asendia e-PAQ Select Express</div>
                   <div class="time">3-9 Days</div>
               </div>
-              <div class="price">$34.72</div>
+              <div class="price">Rs.3100</div>
           </label>
-
+          <br>
           <label class="shipping-option">
-              <input type="radio" name="shipping" value="fedex-priority">
-              <div class="details">
-                  <div class="title">FedEx International Priority</div>
-                  <div class="time">1-3 Days</div>
-              </div>
-              <div class="price">$48.67</div>
-          </label>
-
-          <label class="shipping-option">
-              <input type="radio" name="shipping" value="usps-express">
-              <div class="details">
-                  <div class="title">USPS Express Mail International</div>
-                  <div class="time">3-5 Days</div>
-              </div>
-              <div class="price">$68.79</div>
-          </label>
-
-          <label class="shipping-option">
-              <input type="radio" name="shipping" value="fedex-economy">
-              <div class="details">
-                  <div class="title">FedEx International Economy</div>
-                  <div class="time">4-6 Days</div>
-              </div>
-              <div class="price">$114.94</div>
-          </label>
-      </form>
-    </div>
-          </div>              
-       </div>
-         </div>
-            </form>
-               </div>
-        
-            <br>
-            <div class="right-section">
-              <div class="summary">
-                  <div class="item">
-                      <img src="headphone.jpg" alt="headphone">
-                      <div class="item-details">
-                          <div class="item-title">Headphone</div>
-                          <div class="item-subtitle">Headphone</div>
-                      </div>
-                      <div class="item-price">Rs.2500</div>
-                  </div>
-                  <div class="discount">
-                      <input type="text" placeholder="Discount code or gift card">
-                      <button>Apply</button>
-                  </div>
-                  <div class="totals">
-                      <div class="subtotal">
-                          <span>Subtotal</span>
-                          <span>Rs.2800</span>
-                      </div>
-                      <div class="shipping">
-                          <span>Shipping</span>
-                          <span>Rs.300</span>
-                      </div>
-                      <div class="total">
-                          <span>Total</span>
-                          <span class="total-amount">Rs.2700</span>
-                      </div>
-                  </div>
-              </div>
+            <input type="radio" name="shipping" value="fedex-priority">
+            <div class="details">
+                <div class="title">FedEx International Priority</div>
+                <div class="time">1-3 Days</div>
+            </div>
+            <div class="price">Rs.2600</div>
+        </label>
+        <br>
+        <label class="shipping-option">
+          <input type="radio" name="shipping" value="usps-express">
+          <div class="details">
+              <div class="title">USPS Express Mail International</div>
+              <div class="time">3-5 Days</div>
           </div>
+          <div class="price">Rs.3000</div>
+      </label>
+      <br>
+      <label class="shipping-option">
+        <input type="radio" name="shipping" value="fedex-economy">
+        <div class="details">
+            <div class="title">FedEx International Economy</div>
+            <div class="time">4-6 Days</div>
+        </div>
+        <div class="price">Rs.2850</div>
+    </label>
+    
+  </div>
+  <br>
+  <div>
+    <h2>Payment</h2>
+    <p style=" color: rgb(138, 139, 139);">All transaction are secure and encrypted</p>
+    <br>
+    <div class="Payment-options">
+      
+      <div class="credit-card-icons">
+        <input type="text" placeholder="Credit card" width="100%">
+       
+        <img src="visa-card.png" alt="Visa" class="credit-card-icon"> <!-- Replace with actual image paths -->
+        <img src="card.png" alt="MasterCard" class="credit-card-icon" height="48px" width="48px">
+        <img src="card (1).png" alt="paypal" class="credit-card-icon"  height="48px" width="48px>
+        <img src="google-pay.png" alt="Google pay" class="credit-card-icon"  height="48px" width="48px">
       </div>
+      
+    </div> 
+  </div>
+</form>
+
+
+
+
+
+  
+    
+
+    
+    
+              </form>
+                    
+      
+
+              
+
+
+              </div>
+                   
+
+              </div>
+            </div>
+         </div>
+       </div> 
+       
+       <div class="details-page">
+        <div class="summary">
+          <div class="item">
+              <img src="headphone.jpg" alt="headphone">
+              <div class="item-details">
+                  <div class="item-title">Headphone</div>
+                  <div class="item-subtitle">Headphone</div>
+              </div>
+              <div class="item-price">Rs.2500</div>
+          </div>
+          <div class="discount">
+              <input type="text" placeholder="Discount code or gift card">
+              <button>Apply</button>
+          </div>
+          <div class="totals">
+              <div class="subtotal">
+                  <span>Subtotal</span>
+                  <span>Rs.2800</span>
+              </div>
+              <div class="shipping">
+                  <span>Shipping</span>
+                  <span>Rs.300</span>
+              </div>
+              <div class="total">
+                  <span>Total</span>
+                  <span class="total-amount">Rs.2700</span>
+              </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+      
   </body>
   </html>
    

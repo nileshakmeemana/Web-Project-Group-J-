@@ -345,19 +345,6 @@ p{
     width: 400px;
     display: inline-block;
 }
-.tel{
-    width: 100%;
-    display: inline-block;
-    
-}
-.Containerpage {
-    display: flex;
-    width: 60%;
-    
-    margin: 20px;
-    padding: 20px;
-    
-}
 
 
 .main {
@@ -590,4 +577,63 @@ p{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     
     
+}
+.Containerpage{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    
+   
+    
+   
+    
+}
+.details-page{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+   padding-left: 50px;
+    border-radius: 8px;
+    
+
+    
+}
+
+.country{
+    margin: 50px;
+
+}
+
+.tel{
+    width: 100%;
+    display: inline-block;
+    
+}
+
+.shipping-methods{
+
+}
+
+.Payment-options{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    width: 100%;
+    
+    align-items: center;
+    
+}
+
+.credit-card-icons{
+   
+    padding: 20px;
+    width: 300px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+   
+            
 }
