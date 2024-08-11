@@ -183,15 +183,66 @@
     <div class="Payment-options">
       
       <div class="credit-card-icons">
-        <input type="text" placeholder="Credit card" width="100%">
-       
-        <img src="visa-card.png" alt="Visa" class="credit-card-icon"> <!-- Replace with actual image paths -->
+
+
+
+     <div class="credit-card">
+        <label class="shipping-option">
+          <input type="radio" name="shipping" value="credit card">
+          <div class="details">
+              <div class="title">Credit Card</div>
+      </label>
+    </div>
+          
+        <img src="visa-card.png" alt="Visa" class="credit-card-icon"> 
         <img src="card.png" alt="MasterCard" class="credit-card-icon" height="48px" width="48px">
-        <img src="card (1).png" alt="paypal" class="credit-card-icon"  height="48px" width="48px>
-        <img src="google-pay.png" alt="Google pay" class="credit-card-icon"  height="48px" width="48px">
+        <img src="card (1).png" alt="paypal" class="credit-card-icon"  height="48px" width="48px">
+        
       </div>
+      </div>
+  
       
     </div> 
+    <br>
+    <div class="card-details">
+      <input class="cardnumber" type="tel" alt="Card number" placeholder="Card number">
+      <br>
+      <br>
+    </div>
+      <div class="expire-date">
+        <input class="security-code" type="date" alt="date" placeholder="Expiration date(MM/YY)">
+      <br>
+      <br>
+      <div class="security">
+        <input class="security-code" type="tel" alt="security-code" placeholder="Security code">
+      </div>
+      <br>
+      <input type="text" alt="Name on card" placeholder="Name on Card" >
+      <br>
+      <br>
+      <label>Use shipping address as billing address</label>
+      <input type="checkbox" value="Use shipping address as billing address">
+      
+      <div class="credit-card">
+      <label class="shipping-option">
+      <input type="radio" name="paypal">
+      <img src="card (1).png" alt="paypal" class="credit-card-icon"  height="48px" width="48px">
+
+
+      
+      <div class="details">
+        
+        <div class="title">Paypal</div>
+        
+      </div>
+      </label>
+      
+    </div>
+
+
+    </div>
+    
+    
   </div>
 </form>
 

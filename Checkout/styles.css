@@ -383,11 +383,11 @@ p{
 }
 
 .shipping-methods{
-    background-color: #fff;
+   background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: auto;
+    margin: auto; 
     
     
     
@@ -612,28 +612,41 @@ p{
     
 }
 
-.shipping-methods{
 
-}
-
-.Payment-options{
-    background-color: #fff;
+.payment-section {
+    background-color: white;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    width: 100%;
-    
-    align-items: center;
-    
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.credit-card-icons{
-   
-    padding: 20px;
-    width: 300px;
-    display: inline-block;
+.payment-method {
     display: flex;
     align-items: center;
-   
-            
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.cardnumber{
+    width: 98%;
+}
+.security-code{
+    width: 50%;
+}
+
+.payment-icons{
+    align-items: center;
+}
+
+.credit-card{
+    background-color: #fff;
+    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto; 
 }
