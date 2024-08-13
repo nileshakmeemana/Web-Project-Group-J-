@@ -368,7 +368,7 @@ p{
 
 
     
-}
+
 .city{
     width: 100%;
     display: inline-block;
@@ -623,6 +623,21 @@ p{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.checkbox-container {
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
 .payment-method {
     display: flex;
     align-items: center;
@@ -633,7 +648,7 @@ p{
 
 
 .cardnumber{
-    width: 98%;
+    width: 50%;
 }
 .security-code{
     width: 50%;
@@ -649,4 +664,55 @@ p{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: auto; 
+}
+
+.Paypal-icon{
+   position: absolute;
+  padding-left: 50%;
+  
+  
+}
+
+.koko-pay-font{
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    vertical-align: top;
+
+}
+
+.KOKOpay-icon{
+    height: 30px;
+    width: 50px;
+    margin-left: 10px; 
+    
+}
+
+.pay-now-button {
+    background-color: #000; 
+    color: #fff; 
+    padding: 15px 40px; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    text-align: center; 
+    width: 100%; 
+    cursor: pointer; 
+    
+}
+
+.pay-now-button:hover {
+    background-color: #333; 
+}
+
+.bottom{
+    border: none;
+    border-top: 1px solid #ddd; 
+    margin: 50px 0; 
+}
+
+.policy a{
+    color: #000;
+    padding: 10px;
+    padding-top: 2px;
 }
