@@ -624,8 +624,8 @@ p{
 }
 
 .checkbox-container {
-    border: 1px solid #ddd; /* Light gray border */
-    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
     padding: 10px;
     display: flex;
     align-items: center;
