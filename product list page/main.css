@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: aqua;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 10%;
+}
+.sm-title {
+  font-family: "Roboto", sans-serif;
+  padding: 0.6rem 0;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* product section */
+.products {
+  background: #f8f9fa;
+  padding: 3.2rem 0;
+}
+.products .text-light {
+  text-align: center;
+  width: 70%;
+  margin: 0.9rem auto;
+}
+.product {
+  margin: 2rem;
+  position: relative;
+}
+.product-content {
+  background: #ededed;
+  padding: 3rem 0.5rem 2rem 0.5rem;
+  cursor: pointer;
+}
+.product-img {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 80%;
+  transition: background 0.5s ease;
+}
+.product-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.btn-cart,
+.btn-buy {
+  border: 1px solid darkblue;
+  padding: 0.8rem 0;
+  width: 125px;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: all 0.6s ease;
+}
+.btn-cart {
+  background: rgb(230, 61, 10);
+  color: white;
+}
+.btn-cart:hover {
+  background-color: rgb(230, 61, 10);
+  opacity: 0.8;
+}
+.btn-buy {
+  background: white;
+}
+.btn-buy:hover {
+  background: #00badb;
+  color: #fff;
+}
+.product-info {
+  background: white;
+  padding: 2rem;
+}
+.product-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating span {
+  color: #ffbd00;
+}
+.product-name {
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.product-price {
+  padding-top: 0.6rem;
+  padding-right: 0.6rem;
+  display: inline-block;
+}
+.product-price:first-of-type {
+  text-decoration: line-through;
+  color: #40c9a2;
+}
+.product-img img {
+  transition: transform 0.6s ease;
+}
+.product:hover .product-img img {
+  transform: scale(1.1);
+}
+.product:hover .product-img {
+  background: #40c9a2;
+}
+.product:hover .product-btns {
+  opacity: 1;
+}
+.off-info .sm-title {
+  background: #40c9a2;
+  color: white;
+  display: inline-block;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  z-index: 1;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
