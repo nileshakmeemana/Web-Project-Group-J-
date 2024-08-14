@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Quicksand", sans-serif;
-  background-color: aqua;
+  font-family: sans-serif;
 }
 
 img {
   width: 100%;
   display: block;
-  border-radius: 10%;
+  border-radius: 5%;
 }
+
 .sm-title {
   font-family: "Roboto", sans-serif;
   padding: 0.6rem 0;
@@ -27,14 +27,15 @@ img {
   background: #f8f9fa;
   padding: 3.2rem 0;
 }
-.products .text-light {
-  text-align: center;
-  width: 70%;
-  margin: 0.9rem auto;
+
+.product-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Set 4 items per row */
+  gap: 1rem;
 }
 .product {
-  margin: 2rem;
-  position: relative;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .product-content {
   background: #ededed;
@@ -47,7 +48,7 @@ img {
   width: 200px;
   height: 200px;
   margin: 0 auto;
-  border-radius: 80%;
+  border-radius: 50%;
   transition: background 0.5s ease;
 }
 .product-btns {
@@ -59,7 +60,8 @@ img {
 }
 .btn-cart,
 .btn-buy {
-  border: 1px solid darkblue;
+  background: transparent;
+  border: 1px solid black;
   padding: 0.8rem 0;
   width: 125px;
   font-family: inherit;
@@ -69,18 +71,17 @@ img {
   transition: all 0.6s ease;
 }
 .btn-cart {
-  background: rgb(230, 61, 10);
+  background: black;
   color: white;
 }
 .btn-cart:hover {
-  background-color: rgb(230, 61, 10);
-  opacity: 0.8;
+  background: #40c9a2;
 }
 .btn-buy {
   background: white;
 }
 .btn-buy:hover {
-  background: #00badb;
+  background: #40c9a2;
   color: #fff;
 }
 .product-info {
@@ -93,7 +94,7 @@ img {
   align-items: center;
 }
 .rating span {
-  color: #ffbd00;
+  color: #40c9a2;
 }
 .product-name {
   color: black;
