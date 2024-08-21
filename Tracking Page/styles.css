@@ -303,12 +303,7 @@ p{
     margin-top: 20px;
     color: #31c6e1;
     border-radius: 8px;
-   width: 100%;
     color: white;
     display: flex;
 }
 
-.Track-button:hover{
-    background-color: #1e2d7d;
-
-}
