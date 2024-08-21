@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f2f3f4;*/
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            /* max-width: 900px; */
+            background-color: #eff4fa;
+            padding: 20px;
+            /*ox-shadow: 0 0 15px rgba(0, 0, 0, 0.1);*/
+            border-radius: 8px;
+        }
+
+        .contact-form {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .contact-form h2 {
+            margin-left: 200px;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .contact-form p {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #777;
+            font-size: 14px;
+            margin-left: 200px;
+        }
+
+        .input-group {
+            display: flex;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+
+        .input-group input,
+        .input-group select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        button {
+            width: 30%;
+            padding: 12px;
+            border: none;
+            background-color: #0066cc;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        .find-us {
+            flex: 1;
+            text-align: center;
+            
+        }
+
+        .find-us img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .find-us p {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .find-us a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .find-us a:hover {
+            text-decoration: underline;
+        }
+
+        .find-us h4 {
+            margin-top: 120px;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+
+<body bgcolor="#eff4fa">
+    <div class="container">
+        <div class="contact-form">
+           <h2 style="color: darkblue">Contact us</h2>
+            <p>
+                Want to get in touch with us? Just fill out the form below and we'll
+                get back to you as soon as possible.
+            </p>
+            <h4 style="color: darkblue">Leave your message</h4>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Your name" required />
+                    <input type="email" placeholder="Your email" required />
+                </div>
+                <div class="input-group">
+                    <select required>
+                        <option value="" disabled selected>
+                            Who do you want to contact
+                        </option>
+                        <option value="sales">Sales</option>
+                        <option value="support">Support</option>
+                        <option value="general">General</option>
+                    </select>
+                </div>
+                <textarea style="width: -webkit-fill-available" placeholder="Your message" required></textarea>
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+        <div class="find-us">
+            <h4 style="color: darkblue">Find us</h4>
+            <img src="web.jpg" alt="Store Image" />
+            <p>
+                This is a demo store. If you want to get in touch with the real HiDEF
+                Lifestyle, you contact them <a href="#">here</a>.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
