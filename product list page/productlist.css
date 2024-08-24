@@ -150,7 +150,8 @@ img {
   cursor: pointer;
 }
 .sm-title:hover {
-  color: #0090ff;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* Responsive Layout */
