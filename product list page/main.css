@@ -113,7 +113,7 @@ img {
 }
 
 .product-name {
-  color: #082e7a;
+  color: #1e4ea3;
   display: block;
   text-decoration: none;
   font-size: 14px;
@@ -148,6 +148,9 @@ img {
   z-index: 1;
   letter-spacing: 3px;
   cursor: pointer;
+}
+.sm-title:hover {
+  color: #0090ff;
 }
 
 /* Responsive Layout */
