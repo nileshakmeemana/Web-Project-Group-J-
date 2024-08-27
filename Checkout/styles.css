@@ -368,7 +368,7 @@ p{
 
 
     
-}
+
 .city{
     width: 100%;
     display: inline-block;
@@ -383,11 +383,11 @@ p{
 }
 
 .shipping-methods{
-    background-color: #fff;
+   background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: auto;
+    margin: auto; 
     
     
     
@@ -612,28 +612,107 @@ p{
     
 }
 
-.shipping-methods{
 
-}
-
-.Payment-options{
-    background-color: #fff;
+.payment-section {
+    background-color: white;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    width: 100%;
-    
-    align-items: center;
-    
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.credit-card-icons{
-   
-    padding: 20px;
-    width: 300px;
-    display: inline-block;
+.checkbox-container {
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 10px;
     display: flex;
     align-items: center;
-   
-            
+    background-color: white;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.cardnumber{
+    width: 50%;
+}
+.security-code{
+    width: 50%;
+}
+
+.payment-icons{
+    align-items: center;
+}
+
+.credit-card{
+    background-color: #fff;
+    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto; 
+}
+
+.Paypal-icon{
+   position: absolute;
+  padding-left: 50%;
+  
+  
+}
+
+.koko-pay-font{
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    vertical-align: top;
+
+}
+
+.KOKOpay-icon{
+    height: 30px;
+    width: 50px;
+    margin-left: 10px; 
+    
+}
+
+.pay-now-button {
+    background-color: #000; 
+    color: #fff; 
+    padding: 15px 40px; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    text-align: center; 
+    width: 100%; 
+    cursor: pointer; 
+    
+}
+
+.pay-now-button:hover {
+    background-color: #333; 
+}
+
+.bottom{
+    border: none;
+    border-top: 1px solid #ddd; 
+    margin: 50px 0; 
+}
+
+.policy a{
+    color: #000;
+    padding: 10px;
+    padding-top: 2px;
 }
