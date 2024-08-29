@@ -94,3 +94,18 @@ button{
       padding: 0;
     }
   }
+  img{  
+      width: 650px;
+      length:1200px;
+      
+  }
+  h1{
+    color:darkblue;
+  }
+  p{
+    font-size:medium;
+    font-style: inherit;
+    color:grey;
+  }
+
+  
