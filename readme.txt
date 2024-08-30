@@ -20,5 +20,4 @@ Pushpakumara, RDK           admin products/update products.php, shop.php(product
 Sanduwinna, MJPS            Logo creation
 Dayarathna, SKSN            orders.php, category.php,checkout.php         
 Tharuka, HPPP               shop_db.sql file recreation
-Thilakshana, BAI            Project Report
-Silva, ATA                  
+Thilakshana, BAI            Project Report             
