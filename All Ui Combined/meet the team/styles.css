@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'din_next_w1gheavy_italic';
+    src: url('dinnextw1g-heavyitalic-webfont.woff2') format('woff2'),
+         url('dinnextw1g-heavyitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'din_next_w1gmedium_italic';
+    src: url('dinnextw1g-mediumitalic-webfont.woff2') format('woff2'),
+         url('dinnextw1g-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff') format('woff2'),
+         url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    background: #f3f5f6;
+    font-family: regular;
+  }
+
+.banner-1{
+    background-image: url(../images/group.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    align-content: center;
+    
+}
+
+.banner_content{
+  margin: 0;
+  color: #f3f5f6;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+  
+}
+
+.head-title{
+  text-align: center;
+  color: #1e2d7d;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.members{
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.members a{
+  color: #00badb;
+}
+
+.member-tiles{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  line-height: 18px;
+
+}
+
+.member-title{
+  padding: 40px;
+  width: 300px;
+  background-color: white;
+  border: 0.5px solid #e3e5e6;
+  margin: 15px;
+  border-radius: 3px;
+}
+
+.member-title h4{
+  color: #1e2d7d;
+}
+
+.member-title img{
+  margin-bottom: 5px;
+  width: 80px;
+}
+
+@media (width >= 500px) {
+  body {
+   padding: 0;
+  }
+}

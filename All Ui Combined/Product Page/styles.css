@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff') format('woff2'),
+         url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    margin: 4rem;
+    height: 100vh;
+    background: #f3f5f6;
+    font-family: regular;
+  }
+
+.header-1{
+    color: #1e2d7d;
+    text-align: left;
+}
+
+input{
+    display: block;
+    margin-bottom: 15px;
+    width: 300px;
+    border-radius: 2px;
+    padding: 15px;
+    font-size: medium;
+    border: 1px solid rgb(188, 188, 188);
+    transition: border-color 0.15s;
+
+}
+
+input:focus{
+    border-color: #31c6e1;
+    outline: 0;
+}
+
+input::placeholder{
+    font-family: regular;
+}
+
+button{
+    background-color: #31c6e1;
+    color: white;
+    font-weight: 500;
+    border-radius: 2px;
+    width: 200px;
+    padding: 15px;
+    font-size: medium;
+    font-family: regular;
+    cursor: pointer;
+    border: 0;
+}
+
+.tiles{
+    width: 100%vw;
+    text-align: left;
+    display: flex;
+    
+}
+
+.tile1{
+    display: flex;
+    width: 50%;
+    height: 446px;
+    border: 2px solid #d8d8d8;
+    border-radius: 4px;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.tile2{
+    width: 50%;
+    height: 446px;
+    border: 2px solid #d8d8d8;
+    border-radius: 4px;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.tile h2{
+    margin-top: 0px;
+}
+
+img{
+    width: 421px;
+    align-content: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_1{
+    margin-right: 5px;
+    width: 280px;
+}
+
+.btn_2{
+    background-color: #1e2d7d;
+    margin-left: 5px;
+    width: 280px;
+
+}
+
+.slider{
+    display: block;
+    width: 96px;
+    height: 384px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.main_img{
+    margin-left: 15px;
+}
+
+.slider img{
+    width: 96px;
+}
+
+.tag{
+    background-color: red;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 110px;
+}
+
+.product_tags{
+    font-weight: bold;
+}
+
+.product_tags span{
+    margin-left: 20px;
+}
+
+.counter{
+    display: flex;
+}
+
+.counter input{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.Shipping{
+    width: 60%;
+    height: 220px;
+    border: 2px solid #d8d8d8;
+    border-radius: 4px;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.Shipping h2{
+    margin-top: 0px;
+}
+
+.Offers{
+    width: 30%;
+    height: 220px;
+    border: 2px solid #d8d8d8;
+    border-radius: 4px;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 10px;
+    margin: 10px;
+    
+}
+
+.Delivery{
+    display: flex;
+}
+
+.Shipping ul li{
+    font-size: normal;
+    font-weight: 500;
+    line-height: 25px;
+    color: #8e969c;
+    margin-bottom: 10px;
+}
+
+.Shipping ul{
+    padding: 0px 20px;
+}
+
+.Payments{
+    width: 561*2px;
+    height: 270px;
+    border: 2px solid #d8d8d8;
+    border-radius: 4px;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.Payments h2{
+    margin-top: 0px;
+}
+
+.Offers h2{
+    margin-top: 0px;
+    text-align: center;
+}
+
+.Offers p{
+    background-color: #31c6e1;
+    padding: 10px;
+    color: white;
+    border-radius: 2px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.paycards{
+    margin-top: 5px;
+    display: flex;
+}
+
+.paycards img{
+    width: 40px;
+    padding: 5px;
+}
+
+.Payments .desc{
+    font-size: normal;
+    font-weight: 500;
+    line-height: 25px;
+    color: #8e969c;
+    margin: 10px 0px 16px 0px;
+}
+
+.Payments button{
+    margin-right: 15px;
+}
+
+.google{
+    background-color: black;
+}
+
+.paypal{
+    background-color: blue;
+}
+
+.cash{
+    background-color: orangered;
+}
+
+  @media (width >= 500px) {
+    body {
+      padding: 0;
+    }
+  }
