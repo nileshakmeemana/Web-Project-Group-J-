@@ -10,3 +10,14 @@ Jayasekara, AMDT            About Us Page
 Tharuka, HPPP               Database creation(My Sql)
 Thilakshana, BAI            Database creation(My Sql)
 Silva, ATA                  Faq Page
+
+--Updated Additional Tasks--
+Name                        Task
+
+Akmeemana, NN               header.php,footer.php,home.php,user and admin register/login/update.php, admin dashboard/placed orders/messages.php,search page.php
+Rupasingha, MWVL            wishlist.php, cart.php, 
+Pushpakumara, RDK           admin products/update products.php, shop.php(product list),quick_view.php(product page)
+Sanduwinna, MJPS            Logo creation
+Dayarathna, SKSN            orders.php, category.php,checkout.php         
+Tharuka, HPPP               shop_db.sql file recreation
+Thilakshana, BAI            Project Report             

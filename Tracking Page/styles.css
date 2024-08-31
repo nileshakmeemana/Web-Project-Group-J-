@@ -32,8 +32,8 @@
 }
 
 html{
-    /* cursor: url(../images/1.png), auto;
-    cursor: url(../images/2.png), auto; */
+    cursor: url(../images/1.png), auto;
+    cursor: url(../images/2.png), auto;
 
 }
 
@@ -277,3 +277,33 @@ p{
     align-content: center;
     align-items: center;
 }
+.Track-order{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 80px;
+    
+    
+}
+.HR-space{
+    margin: 100px;;
+}
+.Order-ID{
+   position: absolute;
+   top: 50%;
+   left: 30%;
+   width: 100%;
+   border-radius: 8px;
+   
+   
+}
+.billing-email{
+    margin-top: 20px;
+}
+.Track-button{
+    margin-top: 20px;
+    color: #31c6e1;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+}
+

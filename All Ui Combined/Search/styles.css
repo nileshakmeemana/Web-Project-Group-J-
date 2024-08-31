@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff') format('woff2'),
+         url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    /* display: grid;
+    place-items: center;
+    gap: 50px; */
+    margin: 0;
+    height: 100vh;
+    background: #f3f5f6;
+    font-family: regular;
+  }
+
+input{
+    display: block;
+    width: 800px;
+    margin-right: 15px;
+    border-radius: 2px;
+    padding: 15px;
+    font-size: medium;
+    border: 1px solid rgb(188, 188, 188);
+    transition: border-color 0.15s;
+
+}
+
+input:focus{
+    border-color: #31c6e1;
+    outline: 0;
+}
+
+input::placeholder{
+    font-family: regular;
+}
+
+button{
+    background-color: #31c6e1;
+    color: white;
+    font-weight: 500;
+    border-radius: 2px;
+    width: 200px;
+    padding: 15px;
+    font-size: medium;
+    font-family: regular;
+    cursor: pointer;
+    border: 0;
+}
+
+.search_bar{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px;
+}
+  
+  @media (width >= 500px) {
+    body {
+      padding: 0;
+    }
+  }

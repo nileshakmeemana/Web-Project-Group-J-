@@ -31,10 +31,22 @@
 
 }
 
-html{
-    /* cursor: url(../images/1.png), auto;
-    cursor: url(../images/2.png), auto; */
+/* html{
+    cursor: url(../images/1.png), auto;
+    cursor: url(../images/2.png), auto;
 
+} */
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track { 
+    background: #FEFAE0;
+}
+body::-webkit-scrollbar-thumb { 
+    background-color: #a1a1a1;
+    border-radius: 20px; 
+    border: 3px solid #a1a1a1;
 }
 
 body{
