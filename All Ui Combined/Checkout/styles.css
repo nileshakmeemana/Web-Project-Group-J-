@@ -24,8 +24,8 @@
 
 @font-face {
     font-family: 'regular';
-    src: url('../../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff') format('woff2'),
-         url('../../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff2') format('woff');
+    src: url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff') format('woff2'),
+         url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 

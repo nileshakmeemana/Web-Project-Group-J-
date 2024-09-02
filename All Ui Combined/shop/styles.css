@@ -70,7 +70,7 @@ input::placeholder{
 }
 
 button{
-    background-color: #ff0548;
+    background-color: #31c6e1;
     color: white;
     font-weight: 500;
     border-radius: 2px;
@@ -85,12 +85,11 @@ button{
 .tiles{
     text-align: left;
     display: flex;
-    place-items: center;
 }
 
 .tile{
     width: 193.9px;
-    height: 530px;
+    height: 460px;
     border: 2px solid #d8d8d8;
     border-radius: 4px;
     background-color: white;
@@ -108,7 +107,7 @@ img{
 }
 
 .btn{
-    margin-bottom: 10px;
+    margin: 20px 0px;
 }
 
 h5{
@@ -131,34 +130,8 @@ p.price{
 p.stock{
     font-weight: bold;
     color:green;
+    margin-top: 10px;
     margin-bottom: 0px;
-    margin-top: 15px;
-
-}
-
-.check_tile{
-    text-align: center;
-}
-
-.check{
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%vw;
-    height: 265px;
-    border: 2px solid #d8d8d8;
-    border-radius: 4px;
-    background-color: white;
-    padding: 30px;
-    margin-bottom: 10px;
-    margin: 10px;
-
-}
-
-.check .btn{
-    text-align: center;
-    width: 280px;
 }
 
   
