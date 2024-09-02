@@ -1,4 +1,28 @@
 @font-face {
+    font-family: 'din_next_w1gheavy_italic';
+    src: url('dinnextw1g-heavyitalic-webfont.woff2') format('woff2'),
+         url('dinnextw1g-heavyitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'din_next_w1gmedium_italic';
+    src: url('dinnextw1g-mediumitalic-webfont.woff2') format('woff2'),
+         url('dinnextw1g-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
     font-family: 'regular';
     src: url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff') format('woff2'),
          url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff2') format('woff');
@@ -15,19 +39,7 @@ body {
     height: 100vh;
     background: #f3f5f6;
     font-family: regular;
-}
-
-body::-webkit-scrollbar {
-    width: 8px;
-}
-body::-webkit-scrollbar-track { 
-    background: #FEFAE0;
-}
-body::-webkit-scrollbar-thumb { 
-    background-color: #a1a1a1;
-    border-radius: 20px; 
-    border: 3px solid #a1a1a1;
-}
+  }
 
 .header-1{
     color: #1e2d7d;
@@ -36,7 +48,7 @@ body::-webkit-scrollbar-thumb {
 
 input{
     display: block;
-    margin-bottom: 15px;
+    margin: 15px;
     width: 300px;
     border-radius: 2px;
     padding: 15px;
@@ -59,8 +71,9 @@ button{
     background-color: #31c6e1;
     color: white;
     font-weight: 500;
+    margin: 15px;
     border-radius: 2px;
-    width: 200px;
+    width: 693.2px;
     padding: 15px;
     font-size: medium;
     font-family: regular;
@@ -68,12 +81,13 @@ button{
     border: 0;
 }
 
-.btn{
+.btn_1{
     background-color: #31c6e1;
     color: white;
     font-weight: 500;
+    margin: 15px;
     border-radius: 2px;
-    width: 200px;
+    width: 693.2px;
     padding: 15px;
     font-size: medium;
     font-family: regular;
@@ -81,26 +95,68 @@ button{
     border: 0;
 }
 
-.tiles{
-    display: flex;
-    flex-direction: row;
+.footer,.header{
     text-align: center;
 }
 
+.header-title{
+    margin-bottom: 25px;
+}
+
+.product_details{
+    display: flex;
+}
+
+.tiles{
+    text-align: left;
+    display: flex;
+}
+
 .tile{
-    width: 350px;
-    height: 250px;
-    align-content: center;
-    border: 1px solid #979799;
+    width: 193.9px;
+    height: 490px;
+    border: 2px solid #d8d8d8;
     border-radius: 4px;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 10px;
     margin: 10px;
+}
+
+img{
+    width: 193.9px;
 }
 
 .tile h2{
     margin-top: 0px;
 }
 
-  
+.btn{
+    margin-bottom: 10px;
+}
+
+h5{
+    margin-bottom: 10px;
+}
+
+h4{
+    margin: 15px 0px;
+    color: #1e2d7d;
+}
+
+p.price{
+    margin: 15px 0px;
+    font-weight: bold;
+    font-size: large;
+    color: red;
+
+}
+
+p.stock{
+    font-weight: bold;
+    color:green;
+}
+
   @media (width >= 500px) {
     body {
       padding: 0;

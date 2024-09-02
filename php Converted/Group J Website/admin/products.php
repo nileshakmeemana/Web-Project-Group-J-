@@ -86,97 +86,70 @@ if(isset($_GET['delete'])){
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>products</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="../css/admin_header.css" />
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-   <link rel="stylesheet" href="../css/admin_style.css">
-
-</head>
+  </head>
 <body>
 
 <?php include '../components/admin_header.php'; ?>
 
-<section class="add-products">
-
-   <h1 class="heading">add product</h1>
-
-   <form action="" method="post" enctype="multipart/form-data">
-      <div class="flex">
-         <div class="inputBox">
-            <span>product name (required)</span>
-            <input type="text" class="box" required maxlength="100" placeholder="enter product name" name="name">
-         </div>
-         <div class="inputBox">
-            <span>product price (required)</span>
-            <input type="number" min="0" class="box" required max="9999999999" placeholder="enter product price" onkeypress="if(this.value.length == 10) return false;" name="price">
-         </div>
-        <div class="inputBox">
-            <span>image 01 (required)</span>
-            <input type="file" name="image_01" accept="image/jpg, image/jpeg, image/png, image/webp" class="box" required>
-        </div>
-        <div class="inputBox">
-            <span>image 02 (required)</span>
-            <input type="file" name="image_02" accept="image/jpg, image/jpeg, image/png, image/webp" class="box" required>
-        </div>
-        <div class="inputBox">
-            <span>image 03 (required)</span>
-            <input type="file" name="image_03" accept="image/jpg, image/jpeg, image/png, image/webp" class="box" required>
-        </div>
-         <div class="inputBox">
-            <span>product details (required)</span>
-            <textarea name="details" placeholder="enter product details" class="box" required maxlength="500" cols="30" rows="10"></textarea>
-         </div>
+<div class="log-form">
+      <div class="header">
+        <h1 class="header-1">Add Product</h1>
+        <p class="header-title">Enter Your Product Details and Images</p>
       </div>
-      
-      <input type="submit" value="add product" class="btn" name="add_product">
-   </form>
-
-</section>
-
-<section class="show-products">
-
-   <h1 class="heading">products added</h1>
-
-   <div class="box-container">
-
-   <?php
-      $select_products = $conn->prepare("SELECT * FROM `products`");
-      $select_products->execute();
-      if($select_products->rowCount() > 0){
-         while($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)){ 
-   ?>
-   <div class="box">
-      <img src="../uploaded_img/<?= $fetch_products['image_01']; ?>" alt="">
-      <div class="name"><?= $fetch_products['name']; ?></div>
-      <div class="price">$<span><?= $fetch_products['price']; ?></span>/-</div>
-      <div class="details"><span><?= $fetch_products['details']; ?></span></div>
-      <div class="flex-btn">
-         <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="option-btn">update</a>
-         <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
-      </div>
-   </div>
-   <?php
-         }
-      }else{
-         echo '<p class="empty">no products added yet!</p>';
-      }
-   ?>
+      <form action=""  method="post" enctype="multipart/form-data">
+        <div class="product_details">
+          <input type="text" placeholder="Enter Product Name" required maxlength="100" name="name"/>
+          <input type="number" placeholder="Enter Product Price" min="0" class="box" required max="9999999999" onkeypress="if(this.value.length == 10) return false;" name="price"/>
+        </div>
+        <div class="product_details">
+          <input type="file" placeholder="Choose Images" name="image_01" accept="image/jpg, image/jpeg, image/png, image/webp" required/>
+          <input type="file" placeholder="Choose Images" name="image_02" accept="image/jpg, image/jpeg, image/png, image/webp" required/>
+        </div>
+        <div class="product_details">
+          <input type="file" placeholder="Choose Images" name="image_03" accept="image/jpg, image/jpeg, image/png, image/webp" required/>
+          <input type="text" placeholder="Product Stock" name="details" required maxlength="500"/>
+        </div>
+        <input type="submit" value="Add Product" class="btn_1" name="add_product">
+      </form>
+    </div>
+    <div class="Dashboard">
+      <h1 class="header-1">All Products</h1>
+      <div class="all">
+      <?php
+         $select_products = $conn->prepare("SELECT * FROM `products`");
+         $select_products->execute();
+         if($select_products->rowCount() > 0){
+            while($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)){ 
+      ?>
+          <div class="tiles">
+            <div class="tile 1">
+              <img src="../uploaded_img/<?= $fetch_products['image_01']; ?>" alt="">
+              <h5 style="color: gray;">WAREHOUSE</h5>
+              <h4><?= $fetch_products['name']; ?></h4>
+              <p class="price">LKR <span><?= $fetch_products['price']; ?></span>/=</p>
+              <p class="stock"><span><?= $fetch_products['details']; ?></span></p>
+              <div class="all_buttons">
+                <a href="update_product.php?update=<?= $fetch_products['id']; ?>"><button class="btn" style="width: 200px; margin: 0px; margin-bottom: 10px; background-color: #1e2d7d;">Update</button></a>
+                <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');"><button style="background-color: #ff0548; width: 200px; margin: 0px;">Delete</button></a>
+              </div>
+          </div>
+          <?php
+               }
+            }else{
+               echo '<p class="empty">no products added yet!</p>';
+            }
+         ?>
    
-   </div>
-
-</section>
-
-
-
-
-
-
-
+      </div>
+    </div>
 
 <script src="../js/admin_script.js"></script>
    

@@ -11,41 +11,32 @@
    }
 ?>
 
-<header class="header">
-
-   <section class="flex">
-
-      <a href="../admin/dashboard.php" class="logo">Admin<span>Panel</span></a>
-
-      <nav class="navbar">
-         <a href="../admin/dashboard.php">home</a>
-         <a href="../admin/products.php">products</a>
-         <a href="../admin/placed_orders.php">orders</a>
-         <a href="../admin/admin_accounts.php">admins</a>
-         <a href="../admin/users_accounts.php">users</a>
-         <a href="../admin/messages.php">messages</a>
-      </nav>
-
-      <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="user-btn" class="fas fa-user"></div>
-      </div>
-
-      <div class="profile">
-         <?php
+<header class="admin">
+      <div class="nav-bar">
+        <a href="dashboard.php" class="logo">
+          <img class="header-logo" src="../images/Logo.webp" alt="logo" />
+        </a>
+        <div class="tabs">
+          <ul>
+            <li><a href="../admin/dashboard.php">Home</a></li>
+            <li><a href="../admin/products.php">All Products</a></li>
+            <li><a href="../admin/placed_orders.php">Orders</a></li>
+            <li><a href="../admin/admin_accounts.php">Admins</a></li>
+            <li><a href="../admin/users_accounts.php">Users</a></li>
+            <li><a href="../admin/messages.php">Messages</a></li>
+            <li><a href="../admin/update_profile.php">Update Profile</a></li>
+          </ul>
+        </div>
+        <div class="buttons">
+        <?php
             $select_profile = $conn->prepare("SELECT * FROM `admins` WHERE id = ?");
             $select_profile->execute([$admin_id]);
             $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
          ?>
-         <p><?= $fetch_profile['name']; ?></p>
-         <a href="../admin/update_profile.php" class="btn">update profile</a>
-         <div class="flex-btn">
-            <a href="../admin/register_admin.php" class="option-btn">register</a>
-            <a href="../admin/admin_login.php" class="option-btn">login</a>
-         </div>
-         <a href="../components/admin_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a> 
+          <?= $fetch_profile['name']; ?>
+          <a href="../admin/admin_login.php"><button>Login</button></a>
+          <a href="../components/admin_logout.php" onclick="return confirm('logout from the website?');"><button>Logout</button></a>
+          <a href="../admin/register_admin.php"><button>Register</button></a>
+        </div>
       </div>
-
-   </section>
-
-</header>
+    </header>
