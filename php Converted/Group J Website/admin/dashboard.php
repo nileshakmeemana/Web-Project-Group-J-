@@ -20,6 +20,7 @@ if(!isset($admin_id)){
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/admin_header.css" />
   </head>
 <body>
 
@@ -119,7 +120,7 @@ if(!isset($admin_id)){
             ?>
                 <h2><?= $number_of_messages; ?></h2>
                 <p>New Messages</p>
-                <a href="messagess.php"><button>See Messages</button></a>
+                <a href="messages.php"><button>See Messages</button></a>
             </div>
         </div>
     </div>

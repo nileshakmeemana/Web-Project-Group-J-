@@ -15,19 +15,7 @@ body {
     height: 100vh;
     background: #f3f5f6;
     font-family: regular;
-}
-
-body::-webkit-scrollbar {
-    width: 8px;
-}
-body::-webkit-scrollbar-track { 
-    background: #FEFAE0;
-}
-body::-webkit-scrollbar-thumb { 
-    background-color: #a1a1a1;
-    border-radius: 20px; 
-    border: 3px solid #a1a1a1;
-}
+  }
 
 .header-1{
     color: #1e2d7d;
@@ -50,27 +38,28 @@ input:focus{
     border-color: #31c6e1;
     outline: 0;
 }
+select:focus{
+    border-color: #31c6e1;
+    outline: 0;
+}
 
 input::placeholder{
     font-family: regular;
 }
 
-button{
-    background-color: #31c6e1;
-    color: white;
-    font-weight: 500;
-    border-radius: 2px;
-    width: 200px;
+select{
+    appearance: none;
     padding: 15px;
-    font-size: medium;
     font-family: regular;
-    cursor: pointer;
-    border: 0;
+    width: 250px;
+    font-size: medium;
+    
 }
 
-.btn{
-    background-color: #31c6e1;
+button{
+    background-color: #ff0548;
     color: white;
+    margin-bottom: 10px;
     font-weight: 500;
     border-radius: 2px;
     width: 200px;
@@ -82,22 +71,41 @@ button{
 }
 
 .tiles{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+    text-align: left;
 }
 
 .tile{
-    width: 350px;
-    height: 250px;
-    align-content: center;
-    border: 1px solid #979799;
+    text-align: left;
+    width: 80vw;
+    height: 310px;
+    border: 2px solid #d8d8d8;
     border-radius: 4px;
-    margin: 10px;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 10px;
 }
+
+
+/* .set_1{
+    margin-right: 50px;
+}
+
+.set_2{
+    margin-left: 50px;
+    margin-right: 50px;
+} */
 
 .tile h2{
     margin-top: 0px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
 }
 
   

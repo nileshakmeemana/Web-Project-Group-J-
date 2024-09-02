@@ -27,6 +27,8 @@ if(isset($_GET['delete'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Accounts</title>
     <link rel="stylesheet" href="../css/admin_accounts.css" />
+    <link rel="stylesheet" href="../css/admin_header.css" />
+
   </head>
 <body>
 
@@ -46,25 +48,25 @@ if(isset($_GET['delete'])){
             if($select_accounts->rowCount() > 0){
             while($fetch_accounts = $select_accounts->fetch(PDO::FETCH_ASSOC)){   
          ?>
-        <div class="tile 1">
-       
-           
-           <h2>Admin Details</h2>
-           <p>Admin Id: <span><?= $fetch_accounts['id']; ?></span></p>
-           <p>Admin Name:  <span><?= $fetch_accounts['name']; ?></span></p>
-           <div class="btn">
 
-            <?php
-            if($fetch_accounts['id'] == $admin_id){
-               echo '<a href="update_profile.php"><button class="btn_1">Update</button></a>';
-            }
-            ?>
-
-            <a href="admin_accounts.php?delete=<?= $fetch_accounts['id']; ?>"  onclick="return confirm('delete this account?')">
-            <button style="background-color: #ff0548" class="btn_2">
-               Delete
-            </button></a>
-          </div>
+           <div class="tile 1">
+              <h2>Admin Details</h2>
+              <p>Admin Id: <span><?= $fetch_accounts['id']; ?></span></p>
+              <p>Admin Name:  <span><?= $fetch_accounts['name']; ?></span></p>
+              <div class="btn">
+   
+               <?php
+               if($fetch_accounts['id'] == $admin_id){
+                  echo '<a href="update_profile.php"><button class="btn_1">Update</button></a>';
+               }
+               ?>
+   
+               <a href="admin_accounts.php?delete=<?= $fetch_accounts['id']; ?>"  onclick="return confirm('delete this account?')">
+               <button style="background-color: #ff0548" class="btn_2">
+                  Delete
+               </button></a>
+             </div>
+           </div>
 
           <?php
                }
@@ -72,10 +74,8 @@ if(isset($_GET['delete'])){
                echo '<p class="empty">no accounts available!</p>';
             }
             ?>
-        </div>
       </div>
-   </div></div>
-
+   </div>
 <script src="../js/admin_script.js"></script>
    
 </body>

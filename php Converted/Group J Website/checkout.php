@@ -48,106 +48,97 @@ if(isset($_POST['order'])){
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>checkout</title>
-   
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
-
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./css/checkout.css" />
+  </head>
 <body>
    
 <?php include 'components/user_header.php'; ?>
-
-<section class="checkout-orders">
-
-   <form action="" method="POST">
-
-   <h3>your orders</h3>
-
-      <div class="display-orders">
-      <?php
-         $grand_total = 0;
-         $cart_items[] = '';
-         $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
-         $select_cart->execute([$user_id]);
-         if($select_cart->rowCount() > 0){
-            while($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)){
-               $cart_items[] = $fetch_cart['name'].' ('.$fetch_cart['price'].' x '. $fetch_cart['quantity'].') - ';
-               $total_products = implode($cart_items);
-               $grand_total += ($fetch_cart['price'] * $fetch_cart['quantity']);
-      ?>
-         <p> <?= $fetch_cart['name']; ?> <span>(<?= '$'.$fetch_cart['price'].'/- x '. $fetch_cart['quantity']; ?>)</span> </p>
-      <?php
-            }
-         }else{
-            echo '<p class="empty">your cart is empty!</p>';
-         }
-      ?>
-         <input type="hidden" name="total_products" value="<?= $total_products; ?>">
-         <input type="hidden" name="total_price" value="<?= $grand_total; ?>" value="">
-         <div class="grand-total">grand total : <span>$<?= $grand_total; ?>/-</span></div>
+   <div class="log-form">
+      <div class="header">
+        <h1 class="header-1">Checkout</h1>
+        <p class="header-title">Place Your Order</p>
       </div>
-
-      <h3>place your orders</h3>
-
-      <div class="flex">
-         <div class="inputBox">
-            <span>your name :</span>
-            <input type="text" name="name" placeholder="enter your name" class="box" maxlength="20" required>
-         </div>
-         <div class="inputBox">
-            <span>your number :</span>
-            <input type="number" name="number" placeholder="enter your number" class="box" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
-         </div>
-         <div class="inputBox">
-            <span>your email :</span>
-            <input type="email" name="email" placeholder="enter your email" class="box" maxlength="50" required>
-         </div>
-         <div class="inputBox">
-            <span>payment method :</span>
-            <select name="method" class="box" required>
-               <option value="cash on delivery">cash on delivery</option>
-               <option value="credit card">credit card</option>
-               <option value="paytm">paytm</option>
-               <option value="paypal">paypal</option>
-            </select>
-         </div>
-         <div class="inputBox">
-            <span>address line 01 :</span>
-            <input type="text" name="flat" placeholder="e.g. flat number" class="box" maxlength="50" required>
-         </div>
-         <div class="inputBox">
-            <span>address line 02 :</span>
-            <input type="text" name="street" placeholder="e.g. street name" class="box" maxlength="50" required>
-         </div>
-         <div class="inputBox">
-            <span>city :</span>
-            <input type="text" name="city" placeholder="e.g. mumbai" class="box" maxlength="50" required>
-         </div>
-         <div class="inputBox">
-            <span>state :</span>
-            <input type="text" name="state" placeholder="e.g. maharashtra" class="box" maxlength="50" required>
-         </div>
-         <div class="inputBox">
-            <span>country :</span>
-            <input type="text" name="country" placeholder="e.g. India" class="box" maxlength="50" required>
-         </div>
-         <div class="inputBox">
-            <span>pin code :</span>
-            <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
-         </div>
+      <div class="checkout">
+        <form action="" method=post>
+          <div class="checkout_form">
+             <div class="product_details">
+               <input type="text" placeholder="Enter Your Name" name="name" maxlength="20" required/>
+               <input type="number" placeholder="Enter Your Number" name="number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required/>
+             </div>
+             <div class="product_details">
+               <input type="email" placeholder="Enter Your Email" name="email" maxlength="50" required/>
+               <select name="method" required>
+                 <option value disabled selected>Payment Method</option>
+                 <option>Cash On Delivery</option>
+                 <option>PayPal</option>
+                 <option>Google Pay</option>
+               </select>
+             </div>
+             <div class="product_details">
+               <input type="text" placeholder="Address Line 01" name="flat" maxlength="50" required/>
+               <input type="text" placeholder="Address Line 02" name="street" maxlength="50" required/>
+             </div>
+             <div class="product_details">
+               <input type="text" placeholder="Enter Your City" name="city" maxlength="50" required/>
+               <input type="text" placeholder="Enter Your State" name="state" maxlength="50" required/>
+             </div>
+             <div class="product_details">
+               <input type="text" placeholder="Enter Your Country" name="country" maxlength="50" required/>
+               <input type="text" placeholder="Enter Your Zipcode" min="0" name="pin_code" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" required/>
+             </div>
+             <button type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">Place Order</button>
+          </div>
+         
+             <div class="check">
+                <?php
+                  $grand_total = 0;
+                  $cart_items[] = '';
+                  $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+                  $select_cart->execute([$user_id]);
+                  if($select_cart->rowCount() > 0){
+                     while($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)){
+                        $cart_items[] = $fetch_cart['name'].' ('.$fetch_cart['price'].' x '. $fetch_cart['quantity'].') - ';
+                        $total_products = implode($cart_items);
+                        $grand_total += ($fetch_cart['price'] * $fetch_cart['quantity']);
+                  ?>
+                            <h3>Your Orders</h3>
+                            <div class="product-tile">
+                  <p> <?= $fetch_cart['name']; ?> <span>(<?= 'LKR '.$fetch_cart['price'].'/- x '. $fetch_cart['quantity']; ?>)</span> </p>
+                            </div>
+                            <?php
+                  }
+                            }else{
+                  echo '<p class="empty">your cart is empty!</p>';
+                            }
+                         ?>
+                         <input type="hidden" name="total_products" value="<?= $total_products; ?>">
+                         <input type="hidden" name="total_price" value="<?= $grand_total; ?>" value="">
+                         <div class="grand-total"><h2>Grand Total : <span>LKR <?= $grand_total; ?>/=</span></h2></div>
+             </div>
+      </form>
+          <!-- <div class="product-tile">
+            <p>Sony Headset 300ed ($2500/- x 1)</p>
+          </div>
+          <div class="product-tile">
+            <p>Sony Headset 300ed ($2500/- x 1)</p>
+          </div>
+          <div class="product-tile">
+            <p>Sony Headset 300ed ($2500/- x 1)</p>
+          </div>
+          <div class="product-tile">
+            <p>Sony Headset 300ed ($2500/- x 1)</p>
+          </div>
+          <div class="product-tile">
+            <p>Sony Headset 300ed ($2500/- x 1)</p>
+          </div> -->
+        </div>
       </div>
-
-      <input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="place order">
-
-   </form>
+    </div>
 
 </section>
 
