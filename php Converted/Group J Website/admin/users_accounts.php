@@ -35,6 +35,8 @@ if(isset($_GET['delete'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Accounts</title>
     <link rel="stylesheet" href="../css/user_accounts.css" />
+    <link rel="stylesheet" href="../css/admin_header.css" />
+
   </head>
 <body>
 

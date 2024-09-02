@@ -43,6 +43,7 @@ body {
 
 .header-1{
     color: #1e2d7d;
+    text-align: center;
 }
 
 input{
@@ -92,7 +93,56 @@ button{
     display: flex;
 }
 
-  
+.tiles{
+    text-align: left;
+    display: flex;
+}
+
+.tile{
+    width: 193.9px;
+    height: 490px;
+    border: 2px solid #d8d8d8;
+    border-radius: 4px;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+img{
+    width: 193.9px;
+}
+
+.tile h2{
+    margin-top: 0px;
+}
+
+.btn{
+    margin-bottom: 10px;
+}
+
+h5{
+    margin-bottom: 10px;
+}
+
+h4{
+    margin: 15px 0px;
+    color: #1e2d7d;
+}
+
+p.price{
+    margin: 15px 0px;
+    font-weight: bold;
+    font-size: large;
+    color: red;
+
+}
+
+p.stock{
+    font-weight: bold;
+    color:green;
+}
+
   @media (width >= 500px) {
     body {
       padding: 0;

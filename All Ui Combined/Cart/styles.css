@@ -42,6 +42,24 @@ input{
 
 }
 
+.qty{
+    display: block;
+    margin-bottom: 15px;
+    width: 35px;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: medium;
+    border: 1px solid rgb(188, 188, 188);
+    transition: border-color 0.15s;
+    margin-bottom: 0px;
+
+}
+
+.sq{
+    display: flex;
+    justify-content: space-between;
+}
+
 input:focus{
     border-color: #31c6e1;
     outline: 0;
@@ -67,12 +85,12 @@ button{
 .tiles{
     text-align: left;
     display: flex;
-    width: 100%vw;
+    place-items: center;
 }
 
 .tile{
     width: 193.9px;
-    height: 550px;
+    height: 530px;
     border: 2px solid #d8d8d8;
     border-radius: 4px;
     background-color: white;
@@ -113,6 +131,9 @@ p.price{
 p.stock{
     font-weight: bold;
     color:green;
+    margin-bottom: 0px;
+    margin-top: 15px;
+
 }
 
 .check_tile{
@@ -125,7 +146,7 @@ p.stock{
     align-items: center;
     align-content: center;
     width: 100%vw;
-    height: 250px;
+    height: 265px;
     border: 2px solid #d8d8d8;
     border-radius: 4px;
     background-color: white;
@@ -140,7 +161,7 @@ p.stock{
     width: 280px;
 }
 
-
+  
   @media (width >= 500px) {
     body {
       padding: 0;
