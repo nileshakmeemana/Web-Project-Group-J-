@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    <link rel="stylesheet" href="./css/faq.css" />
+  </head>
+  <body>
+    <div class="faq">
+      <div class="header">
+        <h1 class="header-1">FAQ</h1>
+        <p class="header-2">Shipping</p>
+      </div>
+      <div class="faq-container 1">
+        <details>
+          <summary>
+            <span class="faq-title"> How long does the course take? </span>
+            <img src="./images/plus.png" class="expand-icon" alt="Plus" />
+          </summary>
+          <div class="faq-content">
+            The video content takes more than 4.5 hours. ...
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title">
+              Who teaches courses on Atheros Learning?
+            </span>
+            <img src="./images/plus.png" class="expand-icon" alt="Plus" />
+          </summary>
+          <div class="faq-content">
+            The authors of the courses are mostly ...
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title"
+              >How is the course different from other UX/UI design
+              courses?</span
+            >
+            <img src="./images/plus.png" class="expand-icon" alt="Plus" />
+          </summary>
+          <div class="faq-content">
+            The key aspect is that this course provides a clear overview of the
+            whole design process and principles, that represent necessary
+            information for being successful within the industry. You will also
+            get direct support from the author of this course, who is ready to
+            answer all your questions and care about your next steps. Last but
+            not least is the fact, that it's not only about video content, but
+            you will also get access to the unique database of design resources
+            and special offers from the partners of the course.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title"
+              >Do I get a certificate after completing a course?</span
+            >
+            <img src="./images/plus.png" class="expand-icon" alt="Plus" />
+          </summary>
+          <div class="faq-content">
+            Yes, after successfully finishing the quizzes within the course, you
+            can download a certificate, proving all gained knowledge and skills.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title"
+              >Are there any hidden fees within the course?</span
+            >
+            <img src="./images/plus.png" class="expand-icon" alt="Plus" />
+          </summary>
+          <div class="faq-content">
+            Absolutely not! You will gain all benefits and features with the
+            one-time payment, unlocking the course.
+          </div>
+        </details>
+        <div class="header">
+          <p class="header-2">Product</p>
+        </div>
+        <div class="faq-container 2">
+          <details>
+            <summary>
+              <span class="faq-title"> How long does the course take? </span>
+              <img src="./images/plus.png" class="expand-icon" alt="Plus" />
+            </summary>
+            <div class="faq-content">
+              The video content takes more than 4.5 hours. ...
+            </div>
+          </details>
+          <details>
+            <summary>
+              <span class="faq-title">
+                Who teaches courses on Atheros Learning?
+              </span>
+              <img src="./images/plus.png" class="expand-icon" alt="Plus" />
+            </summary>
+            <div class="faq-content">
+              The authors of the courses are mostly ...
+            </div>
+          </details>
+          <div class="any-question">
+            <h2 class="header-1">Any Question?</h2>
+            <p class="">If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.</p>
+            <tiles class="wrap">
+              <div class="tiles">
+                <img src="./images/phone-call.png" alt="">
+                <p class="title">Cutomer Support</p>
+                <p>+94 78 722 3917</p>
+              </div>
+              <div class="tiles">
+                <img src="./images/email (1).png" alt="">
+                <p class="title">Cutomer Support</p>
+                <p>warehouse@gmail.com</p>
+              </div>
+            </tiles>
+              
+          </div>
+      </div>
+      <script src="script_faq.js"></script>
+    </div>
+  </body>
+</html>
