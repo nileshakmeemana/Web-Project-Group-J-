@@ -1,41 +1,79 @@
-<footer class="footer">
-
-   <section class="grid">
-
-      <div class="box">
-         <h3>quick links</h3>
-         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
-         <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
-         <a href="shop.php"> <i class="fas fa-angle-right"></i> shop</a>
-         <a href="contact.php"> <i class="fas fa-angle-right"></i> contact</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer Example</title>
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <footer class="footer">
+      <div class="icon-wrap">
+        <div class="icon-section">
+          <img src="../images/box.png" alt="" />
+          <p class="icon-title">Free delivery for $80+ orders</p>
+          <p>We deliver in 48 hours max!</p>
+        </div>
+        <div class="icon-section">
+          <img src="../images/return.png" alt="" />
+          <p class="icon-title">Satisfied or refunded</p>
+          <p>Free returns within 14 days</p>
+        </div>
+        <div class="icon-section">
+          <img src="../images/chat.png" alt="" />
+          <p class="icon-title">We are available 24/7</p>
+          <p>Contact us by chat, mail, phone</p>
+        </div>
+        <div class="icon-section">
+          <img src="../images/secure-payment.png" alt="" />
+          <p class="icon-title">100% Secure payments</p>
+          <p>Visa, Mastercard, Amex, PayPal</p>
+        </div>
       </div>
 
-      <div class="box">
-         <h3>extra links</h3>
-         <a href="user_login.php"> <i class="fas fa-angle-right"></i> login</a>
-         <a href="user_register.php"> <i class="fas fa-angle-right"></i> register</a>
-         <a href="cart.php"> <i class="fas fa-angle-right"></i> cart</a>
-         <a href="orders.php"> <i class="fas fa-angle-right"></i> orders</a>
+      <div class="footer-content">
+        <div class="footer-section about" class="about">
+          <h3>About the store</h3>
+          <p style="font-size: large;">
+            Our mission statement is to provide the absolute best customer
+            experience available in the Audio/Video industry without exception.
+          </p>
+          <p>
+            A big thank you to HiDEF Lifestyle for allowing us to use their
+            products.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h3>Popular Collections</h3>
+          <ul style="font-size: large;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section links">
+          <h3>Information</h3>
+          <ul style="font-size: large;">
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Audio Accessories</a></li>
+            <li><a href="#">Headphones</a></li>
+            <li><a href="#">Home Cinema</a></li>
+            <li><a href="#">Sound Bars</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h3>Our Newsletter</h3>
+          <p>
+            Subscribe to get notified about product launches, special offers and
+            news.
+          </p>
+          <input type="email" placeholder="Your email" />
+          <button type="submit">Subscribe</button>
+        </div>
       </div>
-
-      <div class="box">
-         <h3>contact us</h3>
-         <a href="tel:1234567890"><i class="fas fa-phone"></i> +123 456 7899</a>
-         <a href="tel:11122233333"><i class="fas fa-phone"></i> +111 222 3333</a>
-         <a href="mailto:shaikh@gmail.com"><i class="fas fa-envelope"></i> shaikh@gmail.com</a>
-         <a href="https://www.google.com/myplace"><i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </a>
-      </div>
-
-      <div class="box">
-         <h3>follow us</h3>
-         <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
-         <a href="#"><i class="fab fa-twitter"></i>twitter</a>
-         <a href="#"><i class="fab fa-instagram"></i>instagram</a>
-         <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
-      </div>
-
-   </section>
-
-   <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span>mr. web designer</span> | all rights reserved!</div>
-
-</footer>
+      <div class="footer-bottom">&copy; 2024 YourCompany | Designed by You</div>
+    </footer>
+  </body>
+</html>
