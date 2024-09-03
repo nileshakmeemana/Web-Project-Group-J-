@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<title>Untitled Document</title>
+<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+	<div class="faq-container">
+        <h1><b>Frequently Asked Questions</b></h1>
+		<div class="faq-category">
+                <h3><u>Shipping</u></h3>
+			
+                <div class="faq-item">
+					<button class="accordion">Do you ship overseas?<i class="fa-solid fa-chevron-down"></i></button>
+                <div class="pannel">
+					<p>No, we delivery only in sri lanka. Delivering costs will apply. We run discounts and promotions all year, so stay tuned for exclusive deals.</p></div>    
+                </div>
+                <div class="faq-item">
+					<button class="accordion">How long will it take to get my order?<i class="fa-solid fa-chevron-down"></i></button>
+                <div class="pannel">
+					<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Delivery details will be provided in your confirmation email.</p></div>    
+                </div>
+	             <div class="faq-item">
+					<button class="accordion">What shipping carriers do you use?<i class="fa-solid fa-chevron-down"></i></button>
+                <div class="pannel">
+					<p>We use all major carriers, and local courier partners. </p></div>    
+                </div>
+			
+	
+            </div>
+		<div class="faq-category">
+                <h3><u>Product</u></h3>
+			
+                <div class="faq-item">
+					<button class="accordion">Can I return my product?<i class="fa-solid fa-chevron-down"></i></button>
+                <div class="pannel">
+					<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.</p></div>    
+                </div>
+                <div class="faq-item">
+					<button class="accordion">Can I get my product personalized?<i class="fa-solid fa-chevron-down"></i></button>
+                <div class="pannel">
+					<p>it depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.</p></div>   
+			</div>
+                </div>	
+			<div class="faq-category">
+				<h3><u>Any question?</u></h3>
+				<p>If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.</p>
+				
+	<div class="contact-options">
+        <div class="option">
+                <i class="fa fa-phone"></i><br> 
+				<a href="077553573"> Customer support</a><br>
+				<input type="text" placeholder="Enter your text here">
+            </div>
+            <div class="option">
+                <i class="fa fa-envelope"></i><br> 
+                <a href="rghavbhnmmgd@gmail.com">Send a message</a><br>
+               <input type="text" placeholder="Enter your text here">
+            </div>
+        </div>
+		</div>
+	</div>
+		
+		 <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var pannel = this.nextElementSibling;
+                if (pannel.style.display === "block") {
+                    pannel.style.display = "none";
+                } else {
+                    pannel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
