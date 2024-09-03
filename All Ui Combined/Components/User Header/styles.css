@@ -103,7 +103,6 @@ button{
     font-family: regular;
     padding: 10px;
     font-size: medium;
-    font-weight: bold;
     background-color: #31c6e1;
     color: white;
     border-radius: 2px;
@@ -123,4 +122,63 @@ p{
     font-size: 1.3rem;
     cursor: pointer;
     padding: 0px 12px;
+}
+
+/* dropdown */
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-icon {
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 2rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 30px;
+    width: 250px;
+    height: 260px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.user-role {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: regular;
+}
+
+.btn.register{
+    background-color: #1e2d7d;
+}
+
+.btn.logout{
+    background-color: #ff0548;
+}
+
+.btn.login{
+    background-color: rgb(72, 230, 36);;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
