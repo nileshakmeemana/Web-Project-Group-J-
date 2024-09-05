@@ -6,35 +6,35 @@
     <title>Footer Example</title>
     <link rel="stylesheet" href="css/footer.css" />
   </head>
-  <body>
+  <body class="body">
     <footer class="footer">
-      <div class="icon-wrap">
-        <div class="icon-section">
-          <img src="../images/box.png" alt="" />
+      <div class="ft-icon-wrap">
+        <div class="ft-icon-section">
+          <img src="./images/box.png" alt="box" />
           <p class="icon-title">Free delivery for $80+ orders</p>
           <p>We deliver in 48 hours max!</p>
         </div>
-        <div class="icon-section">
-          <img src="../images/return.png" alt="" />
-          <p class="icon-title">Satisfied or refunded</p>
+        <div class="ft-icon-section">
+          <img src="./images/return.png" alt="retun" />
+          <p class="ft-icon-title">Satisfied or refunded</p>
           <p>Free returns within 14 days</p>
         </div>
-        <div class="icon-section">
-          <img src="../images/chat.png" alt="" />
-          <p class="icon-title">We are available 24/7</p>
+        <div class="ft-icon-section">
+          <img src="./images/chat.png" alt="chat" />
+          <p class="ft-icon-title">We are available 24/7</p>
           <p>Contact us by chat, mail, phone</p>
         </div>
-        <div class="icon-section">
-          <img src="../images/secure-payment.png" alt="" />
-          <p class="icon-title">100% Secure payments</p>
+        <div class="ft-icon-section">
+          <img src="./images/secure-payment.png" alt="pay" />
+          <p class="ft-icon-title">100% Secure payments</p>
           <p>Visa, Mastercard, Amex, PayPal</p>
         </div>
       </div>
 
       <div class="footer-content">
-        <div class="footer-section about" class="about">
+        <div class="footer-section about" class="ft-about">
           <h3>About the store</h3>
-          <p style="font-size: large;">
+          <p >
             Our mission statement is to provide the absolute best customer
             experience available in the Audio/Video industry without exception.
           </p>
@@ -45,7 +45,7 @@
         </div>
         <div class="footer-section links">
           <h3>Popular Collections</h3>
-          <ul style="font-size: large;">
+          <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">All Products</a></li>
             <li><a href="#">Categories</a></li>
@@ -55,7 +55,7 @@
         </div>
         <div class="footer-section links">
           <h3>Information</h3>
-          <ul style="font-size: large;">
+          <ul>
             <li><a href="#">Speakers</a></li>
             <li><a href="#">Audio Accessories</a></li>
             <li><a href="#">Headphones</a></li>
@@ -69,8 +69,8 @@
             Subscribe to get notified about product launches, special offers and
             news.
           </p>
-          <input type="email" placeholder="Your email" />
-          <button type="submit">Subscribe</button>
+          <input class="ft-input" type="email" placeholder="Your email" />
+          <button class="ft-btn" type="submit">Subscribe</button>
         </div>
       </div>
       <div class="footer-bottom">&copy; 2024 YourCompany | Designed by You</div>

@@ -1,0 +1,65 @@
+body{
+   font-family: regular;
+   margin: 0;
+   padding: 0;
+   background: #f3f5f6;
+}
+
+.admin .nav-bar{
+   display: flex;
+   font-family: regular;
+   align-items: center;
+   color: white;
+   background-color: #1e2d7d;
+   height: 4.5rem;
+   justify-content: space-between;
+   width: 100vw;
+   margin-top: 0px;
+}
+
+.admin ul{
+   display: flex;
+   list-style: none;
+   padding-left: 0px;
+}
+
+
+.admin a{
+   text-decoration-line: none;
+   color: white;
+}
+
+.admin li a{
+   padding: 0 20px;
+}
+
+.admin .header-logo{
+   width: 175px;
+   margin-left: 4rem;
+}
+
+.admin .logo{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 1rem;
+}
+
+
+.admin .nav-bar button{
+   border: none;
+   font-family: regular;
+   padding: 10px;
+   font-size: medium;
+   background-color: #31c6e1;
+   color: white;
+   border-radius: 2px;
+   cursor: pointer;
+   width: 100px;
+   margin: 5px;
+}
+
+.admin .buttons{
+   margin-right: 4rem;
+}
+

@@ -4,10 +4,11 @@
          url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 
 body {
-    display: grid;
+   
     place-items: center;
     gap: 50px;
     margin: 0;
@@ -20,7 +21,6 @@ body {
     color: #1e2d7d;
     text-align: center;
 }
-
 
 input{
     display: block;
@@ -56,88 +56,34 @@ button{
     border: 0;
 }
 
-.tiles {
-    display: grid; 
-    grid-template-columns: repeat(5, 1fr); /* Five items(5, 1fr) per row */
-    gap: 10px; /* Gap between items */
+.tiles{
     text-align: left;
-    margin-bottom: 10px;
+    display: flex;
 }
 
-.tile {
+.tile{
+    width: 300px;
+    height: 170px;
     border: 2px solid #d8d8d8;
     border-radius: 4px;
     background-color: white;
-    padding: 20px;
-    box-sizing: border-box; 
-    padding-left: 28px;
-    
+    padding: 50px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.tile h2{
+    margin-top: 0px;
+}
+
+.btn{
+    display: flex;
+}
+
+
   
-    height: auto; 
-}
-
-img {
-    width: 100%; 
-    height: auto; 
-}
-
-.tile h2 {
-    margin-top: 0;
-}
-
-.btn {
-    margin-bottom: 10px;
-}
-
-h5 {
-    margin-bottom: 10px;
-}
-
-h4 {
-    margin: 15px 0;
-    color: #1e2d7d;
-}
-
-p.price {
-    margin: 15px 0;
-    font-weight: bold;
-    font-size: large;
-    color: red;
-}
-
-p.stock {
-    font-weight: bold;
-    color: green;
-}
-
-@media screen and (max-width: 1200px) {
-    .tiles {
-
-        grid-template-columns: repeat(4, 1fr); /* Four items per row */
-
+  @media (width >= 500px) {
+    body {
+      padding: 0;
     }
-
-
-@media screen and (max-width: 900px) {
-    .tiles {
-
-        grid-template-columns: repeat(3, 1fr); /* Three items per row */
-
-    }
-
-
-@media screen and (max-width: 600px) {
-    .tiles {
-
-        grid-template-columns: repeat(2, 1fr); 
-
-    }
-
-
-@media screen and (max-width: 400px) {
-    .tiles {
-
-        grid-template-columns: 1fr; /* One item per row */
-
-    }
-
+  }

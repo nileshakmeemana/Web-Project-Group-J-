@@ -7,13 +7,15 @@
 
 }
 
-
-body {
+.body {
+    overflow-x: hidden;
     font-family: regular;
     margin: 0;
     padding: 0;
 }
-
+.footer p{
+    font-size: medium;
+}
 footer {
     background-color: #f3f5f6;
     color: #707a88;
@@ -21,10 +23,7 @@ footer {
     line-height: 24px;
 }
 
-
-
 .footer h3{
-
     color: #1e2d7d;
     font-size: medium;
     text-transform: uppercase;
@@ -35,6 +34,7 @@ footer {
     justify-content: space-between;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+    
 }
 
 .footer-section {
@@ -43,9 +43,7 @@ footer {
 
 }
 
-
-.about{
-
+.ft-about{
     margin-right: 30px;
 }
 .footer-section h3 {
@@ -53,6 +51,7 @@ footer {
 }
 
 .footer-section ul {
+    display: block;
     list-style-type: none;
     padding: 0;
 }
@@ -80,23 +79,16 @@ footer {
     padding: 20px;
 }
 
-
 .footer input:focus{
-
     border-color: #31c6e1;
     outline: 0;
 }
-
-
-
-input{
 
 .footer input::placeholder{
     font-family: regular;
 }
 
 .footer input{
-
     display: block;
     margin-bottom: 15px;
     width: 300px;
@@ -108,8 +100,7 @@ input{
 
 }
 
-
-.footer button{
+.ft-btn{
     background-color: #31c6e1;
     color: white;
     font-weight: 500;
@@ -123,10 +114,7 @@ input{
     border: 0;
 }
 
-
-.icon-wrap{
-
-
+.ft-icon-wrap{
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -134,33 +122,24 @@ input{
     margin-right:2.5rem;
 }
 
-
-.footer .icon-section{
+.ft-icon-section{
     width: 300px;
 }
 
-.footer .icon-section p{
-
+.ft-icon-section p{
     margin: 0;
     margin-bottom: 5px;
 }
 
-.icon-title{
+.ft-icon-title{
     color: #1e2d7d;
 }
 
-
 .footer img{
-
     width: 40px;
     float: left;
     margin-right: 30px;
     fill: #1e2d7d;
 }
 
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
