@@ -112,24 +112,32 @@ p.stock {
 
 @media screen and (max-width: 1200px) {
     .tiles {
-        grid-template-columns: repeat(4, 1fr); 
+
+        grid-template-columns: repeat(4, 1fr); /* Four items per row */
+
     }
-}
+
 
 @media screen and (max-width: 900px) {
     .tiles {
-        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-columns: repeat(3, 1fr); /* Three items per row */
+
     }
-}
+
 
 @media screen and (max-width: 600px) {
     .tiles {
+
         grid-template-columns: repeat(2, 1fr); 
+
     }
-}
+
 
 @media screen and (max-width: 400px) {
     .tiles {
-        grid-template-columns: 1fr; /
+
+        grid-template-columns: 1fr; /* One item per row */
+
     }
-}
+

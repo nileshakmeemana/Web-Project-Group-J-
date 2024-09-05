@@ -7,14 +7,13 @@
 
 }
 
+
 body {
     font-family: regular;
     margin: 0;
     padding: 0;
 }
-p{
-    font-size: medium;
-}
+
 footer {
     background-color: #f3f5f6;
     color: #707a88;
@@ -22,7 +21,10 @@ footer {
     line-height: 24px;
 }
 
-h3{
+
+
+.footer h3{
+
     color: #1e2d7d;
     font-size: medium;
     text-transform: uppercase;
@@ -41,7 +43,9 @@ h3{
 
 }
 
+
 .about{
+
     margin-right: 30px;
 }
 .footer-section h3 {
@@ -76,16 +80,23 @@ h3{
     padding: 20px;
 }
 
-input:focus{
+
+.footer input:focus{
+
     border-color: #31c6e1;
     outline: 0;
 }
 
-input::placeholder{
+
+
+input{
+
+.footer input::placeholder{
     font-family: regular;
 }
 
-input{
+.footer input{
+
     display: block;
     margin-bottom: 15px;
     width: 300px;
@@ -97,7 +108,8 @@ input{
 
 }
 
-button{
+
+.footer button{
     background-color: #31c6e1;
     color: white;
     font-weight: 500;
@@ -111,7 +123,10 @@ button{
     border: 0;
 }
 
+
 .icon-wrap{
+
+
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -119,11 +134,13 @@ button{
     margin-right:2.5rem;
 }
 
-.icon-section{
+
+.footer .icon-section{
     width: 300px;
 }
 
-.icon-section p{
+.footer .icon-section p{
+
     margin: 0;
     margin-bottom: 5px;
 }
@@ -132,7 +149,9 @@ button{
     color: #1e2d7d;
 }
 
-img{
+
+.footer img{
+
     width: 40px;
     float: left;
     margin-right: 30px;

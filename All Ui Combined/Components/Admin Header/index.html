@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Homeadmin</title>
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/6f47df0af3.js"
@@ -25,14 +25,21 @@
             <li><a href="#">Admins</a></li>
             <li><a href="#">Users</a></li>
             <li><a href="#">Messages</a></li>
-            <li><a href="#">Update Profile</a></li>
           </ul>
         </div>
-        <div class="buttons">
-          <a href=""><button>Login</button></a>
-          <a href=""><button>Logout</button></a>
-          <a href=""><button>Register</button></a>
+        <div class="user-menu">
+          <div class="profile-icon">
+            <span class="icons-cart"><i class="fa-solid fa-user"></i> </span>
+          </div>
+          <div class="dropdown">
+            <p class="user-role">admin</p>
+            <button class="btn update-profile">Update Profile</button>
+            <button class="btn register">Register</button>
+            <button class="btn login">Login</button>
+            <button class="btn logout">Logout</button>
+          </div>
         </div>
+        <script src="admin_header_script.js"></script>
       </div>
     </header>
   </body>
