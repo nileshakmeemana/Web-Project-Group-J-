@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'din_next_w1gheavy_italic';
+    src: url('dinnextw1g-heavyitalic-webfont.woff2') format('woff2'),
+         url('dinnextw1g-heavyitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'medium';
+    src: url('../fonts/webfontkit-20240725-091928/dinnextw1g-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20240725-091928/dinnextw1g-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff') format('woff2'),
+         url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    
+    place-items: center;
+    gap: 50px;
+    margin: 0;
+    height: 100vh;
+    background: #f3f5f6;
+    font-family: regular;
+  }
+/* 
+  body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track { 
+    background: #FEFAE0;
+}
+body::-webkit-scrollbar-thumb { 
+    background-color: #a1a1a1;
+    border-radius: 20px; 
+    border: 3px solid #a1a1a1;
+} */
+
+
+.header-1{
+    color: #1e2d7d;
+}
+
+.header-2{
+    color: #1e2d7d;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    color: rgb(89, 89, 89);
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+.footer,.header{
+    text-align: center;
+}
+
+.header-title{
+    margin-bottom: 25px;
+}
+
+.faq{
+    margin-left: 300px;
+    margin-right: 300px;
+    width: 700px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  details {
+      font-size: 1rem;
+      margin: 0 auto;
+      width: 100%;
+      background: #F6FAFF;
+      border-radius: 2px;
+      position: relative;
+      max-width: 700px;
+      border: 2px solid #afbbff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  details:hover {
+    border: 1px solid #1e2d7d;
+  }
+  
+  
+  summary {
+    user-select: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    list-style: none;
+    padding: 1.4rem;
+    align-items: center;
+  }
+  
+  summary:hover .faq-title {
+    opacity: 1;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary:focus {
+    outline: none;
+  }
+  
+  summary:hover .expand-icon {
+    opacity: 1;
+  }
+  
+  .faq-title {
+    color: #1e2d7d;
+    width: 90%;
+    opacity: 0.65;
+    transition: all 250ms ease-in-out;
+  }
+  
+  .faq-content {
+    color: #303651;
+    padding: 0.2em 1em 1em 1em;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  
+  .expand-icon {
+    opacity: 0.65;
+  }
+  
+  .expand-icon {
+    pointer-events: none;
+    position: absolute;
+    right: 1em;
+    width: 15px;
+    transition: all 150ms ease-out;
+  }
+
+  .any-question{
+    text-align: center;
+  }
+
+  .any-question .header-1{
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+
+  .wrap{
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .tiles{
+    width: 350px;
+    padding: 25px;
+    margin-top: 20px;
+    border: 1px solid #c5c5c6;
+  }
+  
+  .tiles p{
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 0px;
+  }
+
+  .tiles .title{
+    color: #1e2d7d;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+  .tiles img{
+    width: 40px;
+  }
+  
+
+  @media (width >= 500px) {
+    body {
+      padding: 0;
+    }
+  }
