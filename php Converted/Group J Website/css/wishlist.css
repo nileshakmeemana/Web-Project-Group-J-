@@ -1,28 +1,4 @@
 @font-face {
-    font-family: 'din_next_w1gheavy_italic';
-    src: url('dinnextw1g-heavyitalic-webfont.woff2') format('woff2'),
-         url('dinnextw1g-heavyitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'din_next_w1gmedium_italic';
-    src: url('dinnextw1g-mediumitalic-webfont.woff2') format('woff2'),
-         url('dinnextw1g-mediumitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
     font-family: 'regular';
     src: url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff') format('woff2'),
          url('../fonts/webfontkit-20240725-091928/dinnextw1g-regular-webfont.woff2') format('woff');
@@ -54,14 +30,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
 .header-1{
     color: #1e2d7d;
     text-align: center;
 }
 
+.category{
+    color: #1e2d7d;
+    text-align: left;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 input{
     display: block;
-    margin: 15px;
+    margin-bottom: 15px;
     width: 300px;
     border-radius: 2px;
     padding: 15px;
@@ -69,6 +54,24 @@ input{
     border: 1px solid rgb(188, 188, 188);
     transition: border-color 0.15s;
 
+}
+
+.qty{
+    display: block;
+    margin-bottom: 15px;
+    width: 35px;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: medium;
+    border: 1px solid rgb(188, 188, 188);
+    transition: border-color 0.15s;
+    margin-bottom: 0px;
+
+}
+
+.sq{
+    display: flex;
+    justify-content: space-between;
 }
 
 input:focus{
@@ -81,12 +84,11 @@ input::placeholder{
 }
 
 button{
-    background-color: #31c6e1;
+    background-color: #ff0548;
     color: white;
     font-weight: 500;
-    margin: 15px;
     border-radius: 2px;
-    width: 693.2px;
+    width: 200px;
     padding: 15px;
     font-size: medium;
     font-family: regular;
@@ -94,40 +96,29 @@ button{
     border: 0;
 }
 
-.btn_1{
-    background-color: #31c6e1;
+.btn{
+    margin-bottom: 10px;
+    background-color: #ff0548;
     color: white;
     font-weight: 500;
-    margin: 15px;
     border-radius: 2px;
-    width: 693.2px;
+    width: 200px;
     padding: 15px;
     font-size: medium;
     font-family: regular;
     cursor: pointer;
     border: 0;
-}
-
-.footer,.header{
-    text-align: center;
-}
-
-.header-title{
-    margin-bottom: 25px;
-}
-
-.product_details{
-    display: flex;
 }
 
 .tiles{
     text-align: left;
     display: flex;
+    place-items: center;
 }
 
 .tile{
     width: 193.9px;
-    height: 490px;
+    height: 530px;
     border: 2px solid #d8d8d8;
     border-radius: 4px;
     background-color: white;
@@ -144,9 +135,7 @@ img{
     margin-top: 0px;
 }
 
-.btn{
-    margin-bottom: 10px;
-}
+
 
 h5{
     margin-bottom: 10px;
@@ -168,8 +157,36 @@ p.price{
 p.stock{
     font-weight: bold;
     color:green;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
 }
 
+.check_tile{
+    text-align: center;
+}
+
+.check{
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%vw;
+    height: 250px;
+    border: 2px solid #d8d8d8;
+    border-radius: 4px;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 10px;
+    margin: 10px;
+
+}
+
+.check .btn{
+    text-align: center;
+    width: 280px;
+}
+  
   @media (width >= 500px) {
     body {
       padding: 0;

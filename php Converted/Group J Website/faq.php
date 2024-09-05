@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>FAQs</title>
+    <link rel="stylesheet" href="./css/faq.css" />
   </head>
   <body>
     <div class="faq">
@@ -17,7 +17,7 @@
         <details>
           <summary>
             <span class="faq-title"> How long does the course take? </span>
-            <img src="../images/plus.png" class="expand-icon" alt="Plus" />
+            <img src="./images/plus.png" class="expand-icon" alt="Plus" />
           </summary>
           <div class="faq-content">
             The video content takes more than 4.5 hours. ...
@@ -28,7 +28,7 @@
             <span class="faq-title">
               Who teaches courses on Atheros Learning?
             </span>
-            <img src="../images/plus.png" class="expand-icon" alt="Plus" />
+            <img src="./images/plus.png" class="expand-icon" alt="Plus" />
           </summary>
           <div class="faq-content">
             The authors of the courses are mostly ...
@@ -40,7 +40,7 @@
               >How is the course different from other UX/UI design
               courses?</span
             >
-            <img src="../images/plus.png"" class="expand-icon" alt="Plus" />
+            <img src="./images/plus.png" class="expand-icon" alt="Plus" />
           </summary>
           <div class="faq-content">
             The key aspect is that this course provides a clear overview of the
@@ -58,7 +58,7 @@
             <span class="faq-title"
               >Do I get a certificate after completing a course?</span
             >
-            <img src="../images/plus.png"" class="expand-icon" alt="Plus" />
+            <img src="./images/plus.png" class="expand-icon" alt="Plus" />
           </summary>
           <div class="faq-content">
             Yes, after successfully finishing the quizzes within the course, you
@@ -70,7 +70,7 @@
             <span class="faq-title"
               >Are there any hidden fees within the course?</span
             >
-            <img src="../images/plus.png"" class="expand-icon" alt="Plus" />
+            <img src="./images/plus.png" class="expand-icon" alt="Plus" />
           </summary>
           <div class="faq-content">
             Absolutely not! You will gain all benefits and features with the
@@ -84,7 +84,7 @@
           <details>
             <summary>
               <span class="faq-title"> How long does the course take? </span>
-              <img src="../images/plus.png"" class="expand-icon" alt="Plus" />
+              <img src="./images/plus.png" class="expand-icon" alt="Plus" />
             </summary>
             <div class="faq-content">
               The video content takes more than 4.5 hours. ...
@@ -95,7 +95,7 @@
               <span class="faq-title">
                 Who teaches courses on Atheros Learning?
               </span>
-              <img src="../images/plus.png" class="expand-icon" alt="Plus" />
+              <img src="./images/plus.png" class="expand-icon" alt="Plus" />
             </summary>
             <div class="faq-content">
               The authors of the courses are mostly ...
@@ -106,12 +106,12 @@
             <p class="">If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.</p>
             <tiles class="wrap">
               <div class="tiles">
-                <img src="../images/phone-call.png" alt="">
+                <img src="./images/phone-call.png" alt="">
                 <p class="title">Cutomer Support</p>
                 <p>+94 78 722 3917</p>
               </div>
               <div class="tiles">
-                <img src="../images/email (1).png" alt="">
+                <img src="./images/email (1).png" alt="">
                 <p class="title">Cutomer Support</p>
                 <p>warehouse@gmail.com</p>
               </div>
@@ -119,7 +119,7 @@
               
           </div>
       </div>
-      <script src="script.js"></script>
+      <script src="script_faq.js"></script>
     </div>
   </body>
 </html>

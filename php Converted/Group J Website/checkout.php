@@ -95,6 +95,7 @@ if(isset($_POST['order'])){
           </div>
          
              <div class="check">
+             <h3>Your Orders</h3>
                 <?php
                   $grand_total = 0;
                   $cart_items[] = '';
@@ -106,7 +107,7 @@ if(isset($_POST['order'])){
                         $total_products = implode($cart_items);
                         $grand_total += ($fetch_cart['price'] * $fetch_cart['quantity']);
                   ?>
-                            <h3>Your Orders</h3>
+                            
                             <div class="product-tile">
                   <p> <?= $fetch_cart['name']; ?> <span>(<?= 'LKR '.$fetch_cart['price'].'/- x '. $fetch_cart['quantity']; ?>)</span> </p>
                             </div>

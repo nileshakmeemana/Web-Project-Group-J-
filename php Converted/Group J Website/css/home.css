@@ -407,7 +407,7 @@ p{
 
 .tiles .tile{
     width: 193.9px;
-    height: 490px;
+    height: 560px;
     border: 2px solid #d8d8d8;
     border-radius: 4px;
     background-color: white;
@@ -445,7 +445,69 @@ p.price{
 
 }
 
+
 p.stock{
     font-weight: bold;
     color:green;
+    margin-top: 10px;
+}
+
+/* product tiles */
+input.btn_1{
+    background-color: #31c6e1;
+    color: white;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 15px;
+    font-size: medium;
+    font-family: regular;
+    cursor: pointer;
+    border: 0;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-right: 0px;
+}
+
+.btn_2{
+    display: block;
+    background-color: #1e2d7d;
+    color: white;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 15px;
+    font-size: medium;
+    font-family: regular;
+    cursor: pointer;
+    border: 0;
+    width: 170px;
+    text-align: center;
+}
+
+
+.qty{
+    display: block;
+    margin-bottom: 15px;
+    width: 35px;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: medium;
+    border: 1px solid rgb(188, 188, 188);
+    transition: border-color 0.15s;
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+}
+
+.sq{
+    display: flex;
+    justify-content: space-between;
+}
+
+button.icon{
+    width: 50px;
+    text-align: center;
+    margin-top: 0px;
+    background-color: #ff0548;
 }
